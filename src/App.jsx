@@ -25,7 +25,11 @@ function App() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ ease:["anticipate","anticipate"], duration: 2, type: "tween" }}
+      transition={{
+        ease: ["anticipate", "anticipate"],
+        duration: 2,
+        type: "tween",
+      }}
       className="min-h-screen bg-white"
     >
       {/* Navigation */}

@@ -1,7 +1,7 @@
 import React from "react";
 import { Github, ExternalLink } from "lucide-react";
 import { motion } from "motion/react";
-
+import mylogo from "../assets/mylogo.png";
 const HomePage = () => {
   const skills = [
     "Kotlin",
@@ -34,7 +34,7 @@ const HomePage = () => {
       {/* Hero Section */}
       <div className="flex flex-col md:flex-row items-center justify-between py-12">
         <div className="md:mr-8">
-          <h1 className="text-5xl font-bold mb-2">Hi, I'm Vivek</h1>
+          <h1 className="text-4xl font-bold mb-2">Hi, I'm Vivek</h1>
           <p className="flex items-center text-gray-600 mb-4">
             <span className="h-2 w-2 bg-pink-500 rounded-full mr-2"></span>
             Based in India
@@ -81,10 +81,10 @@ const HomePage = () => {
           animate={{ opacity: 1, rotate: 0 }}
           transition={{ duration: 0.5, bounce: 0.25 }}
           whileHover={{ scale: 1.05, rotate: 1 }}
-          className="hover:shadow-fuchsia-500 w-88 h-58 rotate-2 rounded-full overflow-hidden shadow-lg shadow-gray-500 hidden md:block"
+          className="hover:shadow-fuchsia-400 w-88 h-58 rotate-2 rounded-full overflow-hidden shadow-lg shadow-gray-500 hidden md:block"
         >
           <img
-            src="https://media.licdn.com/dms/image/v2/D4D03AQHYsSnBNGubDQ/profile-displayphoto-shrink_800_800/B4DZXI77rzHYAc-/0/1742832910212?e=1750291200&v=beta&t=iGxpNlY2M9xkJAiDOmQPnPfj7-j-gpmhBD-OKUKjd98"
+            src={mylogo}
             alt="Vivek Upasani"
             className="w-full h-full object-cover shadow-lg shadow-gray-500 rounded-full"
           />
@@ -93,7 +93,7 @@ const HomePage = () => {
 
       {/* Work Experience */}
       <div className="md:py-8">
-        <h2 className="text-3xl font-bold mb-6">Work Experience</h2>
+        <h2 className="text-2xl font-bold mb-6">Work Experience</h2>
 
         <div className="mb-6">
           <div className="flex flex-wrap items-center justify-between mb-1">
@@ -103,7 +103,7 @@ const HomePage = () => {
               </div>
               <div>
                 <div className="flex items-center">
-                  <h3 className="text-xl font-medium">
+                  <h3 className="text-lg font-medium">
                     Charotar Education Society
                   </h3>
                   <a href="https://cesociety.in/">
@@ -125,7 +125,7 @@ const HomePage = () => {
               </div>
               <div>
                 <div className="flex items-center">
-                  <h3 className="text-xl font-medium">Freelancer</h3>
+                  <h3 className="text-lg font-medium">Freelancer</h3>
                   <ExternalLink size={16} className="ml-2 text-gray-500" />
                 </div>
                 <p className="text-gray-600">
@@ -140,7 +140,7 @@ const HomePage = () => {
 
       {/* Skills */}
       <div className="py-8">
-        <h2 className="text-3xl font-bold mb-6">Skills</h2>
+        <h2 className="text-2xl font-bold mb-6">Skills</h2>
         <div className="flex flex-wrap gap-2">
           {skills.map((skill, index) => (
             <motion.span
@@ -149,7 +149,7 @@ const HomePage = () => {
                 transition: { duration: 0.2, bounce: 0.25 },
               }}
               key={index}
-              className="bg-black  text-white px-4 py-2 rounded-full"
+              className="bg-black  text-white px-3 py-1 rounded-full"
             >
               {skill}
             </motion.span>
@@ -159,7 +159,7 @@ const HomePage = () => {
 
       {/* Latest Work */}
       <div className="py-8">
-        <h2 className="text-4xl sm:text-3xl font-bold mb-4 ">Projects</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-4 ">Projects</h2>
         <p className="text-gray-600 mb-8">
           I'm currently working on an AI-powered code review SaaS tool designed
           to help developers write better code. I'm passionate about building
