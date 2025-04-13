@@ -1,8 +1,6 @@
 import React from "react";
-import {
-  Github,
-  ExternalLink,
-} from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
+import { motion } from "motion/react";
 
 const HomePage = () => {
   const skills = [
@@ -46,32 +44,51 @@ const HomePage = () => {
             development and a growing expertise in MongoDB, Express.js,
             React.js, Node.js.
           </p>
-          <p className="text-gray-700 mb-6">
+          <p className="text-gray-700 mb-6 ">
             For quick connect just drop me a Hey! on X, I'm pretty active there.
           </p>
+
           <div className="flex space-x-4 mb-8">
-            <a
+            <motion.a
+              whileHover={{
+                shadow: "lg",
+                transition: { duration: 0.2 },
+                rotate: -2,
+                scale: 1.05,
+              }}
               href="https://x.com/VIVEKUpasani2"
               className="flex items-center bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800"
             >
               <span className="mr-2">Discuss Your Project</span>
               <ExternalLink size={16} />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
+              whileHover={{
+                shadow: "lg",
+                transition: { duration: 0.2 },
+                rotate: 3,
+                scale: 1.05,
+              }}
               href="mailto:vivekupasani984@gmail.com"
               className="bg-gray-900 text-white px-6 py-3 rounded-md hover:bg-gray-700"
             >
               Hire
-            </a>
+            </motion.a>
           </div>
         </div>
-        <div className="hover:shadow-fuchsia-500 w-88 h-58 rotate-2 rounded-full overflow-hidden shadow-lg shadow-gray-500 hidden md:block">
+        <motion.div
+          initial={{ opacity: 0, rotate: 0 }}
+          animate={{ opacity: 1, rotate: 0 }}
+          transition={{ duration: 0.5, bounce: 0.25 }}
+          whileHover={{ scale: 1.05, rotate: 1 }}
+          className="hover:shadow-fuchsia-500 w-88 h-58 rotate-2 rounded-full overflow-hidden shadow-lg shadow-gray-500 hidden md:block"
+        >
           <img
             src="https://media.licdn.com/dms/image/v2/D4D03AQHYsSnBNGubDQ/profile-displayphoto-shrink_800_800/B4DZXI77rzHYAc-/0/1742832910212?e=1750291200&v=beta&t=iGxpNlY2M9xkJAiDOmQPnPfj7-j-gpmhBD-OKUKjd98"
             alt="Vivek Upasani"
             className="w-full h-full object-cover shadow-lg shadow-gray-500 rounded-full"
           />
-        </div>
+        </motion.div>
       </div>
 
       {/* Work Experience */}
@@ -126,12 +143,16 @@ const HomePage = () => {
         <h2 className="text-3xl font-bold mb-6">Skills</h2>
         <div className="flex flex-wrap gap-2">
           {skills.map((skill, index) => (
-            <span
+            <motion.span
+              whileHover={{
+                scale: 1.2,
+                transition: { duration: 0.2, bounce: 0.25 },
+              }}
               key={index}
               className="bg-black  text-white px-4 py-2 rounded-full"
             >
               {skill}
-            </span>
+            </motion.span>
           ))}
         </div>
       </div>
@@ -357,10 +378,10 @@ const HomePage = () => {
           <p className="text-gray-600">I respond the quickest to mails.</p>
         </div>
       </div>
-      <p className="text-sm sm:text-center text-gray-300 p-10">
+      <p className="text-center text-gray-300 p-10">
         The portfolio design is inspired from{" "}
         <a
-          className="underline underline-offset-3 hover:text-black"
+          className=" underline underline-offset-3 hover:text-black"
           href="https://yashyadav.info/"
         >
           Yash Yadav
