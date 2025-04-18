@@ -77,7 +77,70 @@ const Projects = () => {
           </div>
         </div>
 
+      
+
         {/* Project 2 */}
+        <div className="border border-gray-200 rounded-lg p-6">
+          <div className="flex items-center mb-2">
+            <h3 className="text-xl font-bold">
+              CloudStash - The ultimate cloud storage solution
+            </h3>
+            <span className="ml-2 mt-2">☁️</span>
+          </div>
+          <p className="text-gray-500 mb-4">November 2024 - December 2024</p>
+
+          <p className="text-gray-600 mb-2">
+            Built with Flutter, Node.js, Express.js, Firebase and MongoDB.
+          </p>
+          <p className="font-semibold mb-1">
+            A Google drive-style cloud storage app
+          </p>
+          <p className="text-gray-600 mb-4">
+            It offers fast, secure cloud storage with firebase integration for
+            seamless media upload, management, and performance.
+          </p>
+
+          <div className="flex flex-wrap gap-2 mb-4">
+            <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+              Flutter
+            </span>
+            <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+              Dart
+            </span>
+            <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+              Node.js
+            </span>
+            <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+              Express.js
+            </span>
+            <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+              MongoDB
+            </span>
+            <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+              Firebase
+            </span>
+          </div>
+
+          <div className="flex space-x-2">
+            <a
+              href="https://cloudstash-vivekupasani.onrender.com/"
+              className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
+            >
+              <ExternalLink className="mr-1" size={14} />
+              Website
+            </a>
+            <a
+              href="https://github.com/vivekupasani/cloudstash"
+              className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
+            >
+              <Github className="mr-1" size={14} />
+              Github
+            </a>
+          </div>
+        </div>
+      </div>
+
+        {/* Project 3 */}
         <div className="border border-gray-200 rounded-lg p-6">
           <div className="flex items-center mb-2">
             <h3 className="text-xl font-bold">
@@ -136,68 +199,189 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* Project 3 */}
-        <div className="border border-gray-200 rounded-lg p-6">
-          <div className="flex items-center mb-2">
-            <h3 className="text-xl font-bold">
-              CloudStash - The ultimate cloud storage solution
-            </h3>
-            <span className="ml-2 mt-2">☁️</span>
-          </div>
-          <p className="text-gray-500 mb-4">November 2024 - December 2024</p>
+      {/*Project 4 */}
+      <div className="border border-gray-200 rounded-lg p-6 mt-6">
+        <div className="flex items-center mb-2">
+          <h3 className="text-xl font-bold">
+            ChatApp - Real-time chat & social experience
+          </h3>
+          <span className="ml-2 mt-2">💬</span>
+        </div>
+        <p className="text-gray-500 mb-4">December 2024 - January 2025</p>
 
-          <p className="text-gray-600 mb-2">
-            Built with Flutter, Node.js, Express.js, Cloudinary and MongoDB.
-          </p>
-          <p className="font-semibold mb-1">
-            A Google drive-style cloud storage app
-          </p>
-          <p className="text-gray-600 mb-4">
-            It provides a fast and reliable cloud storage solution for users to
-            upload, manage, and store media files securely. With Cloudinary
-            integration for media storage, CloudStash ensures smooth,
-            high-performance file management.
-          </p>
+        <p className="text-gray-600 mb-2">
+          Built with Kotlin, Firebase, and MVVM Architecture.
+        </p>
+        <p className="font-semibold mb-1">
+          A modern chat app with real-time messaging and social features
+        </p>
+        <p className="text-gray-600 mb-4">
+          Connect with friends, send messages or images, manage statuses, and
+          enjoy light/dark themes—all with Firebase-powered backend and clean
+          UI.
+        </p>
 
-          <div className="flex flex-wrap gap-2 mb-4">
-            <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-              Flutter
-            </span>
-            <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-              Dart
-            </span>
-            <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-              Node.js
-            </span>
-            <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-              Express.js
-            </span>
-            <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-              MongoDB
-            </span>
-            <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-              Cloudinary
-            </span>
-          </div>
+        <div className="flex flex-wrap gap-2 mb-4">
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            Kotlin
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            XML
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            MVVM
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            Firebase Auth
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            Firestore
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            Firebase Storage
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            Realtime DB
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            Glide
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            Material Design
+          </span>
+        </div>
 
-          <div className="flex space-x-2">
-            <a
-              href="#"
-              className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
-            >
-              <ExternalLink className="mr-1" size={14} />
-              Link to app
-            </a>
-            <a
-              href="https://github.com/vivekupasani/cloudstash"
-              className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
-            >
-              <Github className="mr-1" size={14} />
-              Github
-            </a>
-          </div>
+        <div className="flex space-x-2">
+          <a
+            href="https://github.com/vivekupasani/chatapp.git"
+            className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
+          >
+            <Github className="mr-1" size={14} />
+            Github
+          </a>
         </div>
       </div>
+
+      {/* Project 5*/}
+      <div className="border border-gray-200 rounded-lg p-6 mt-6">
+        <div className="flex items-center mb-2">
+          <h3 className="text-xl font-bold">
+            Food Villa - Your personal recipe book
+          </h3>
+          <span className="ml-2 mt-2">🍽️</span>
+        </div>
+        <p className="text-gray-500 mb-4">September 2024 - October 2024</p>
+
+        <p className="text-gray-600 mb-2">
+          Built with Kotlin, MVVM, Retrofit, Room, and more.
+        </p>
+        <p className="font-semibold mb-1">
+          A feature-rich recipe app with step-by-step guides and video tutorials
+        </p>
+        <p className="text-gray-600 mb-4">
+          Food Villa makes cooking easy with clear instructions, videos, and a
+          clean UI. Whether you're a beginner or a pro, explore and prepare
+          meals effortlessly.
+        </p>
+
+        <div className="flex flex-wrap gap-2 mb-4">
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            Kotlin
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            Navigation Component
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            Retrofit
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            Room DB
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            MVVM
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            LiveData
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            Coroutines
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            View Binding
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            Glide
+          </span>
+        </div>
+
+        <div className="flex space-x-2">
+          <a
+            href="https://github.com/vivekupasani/Food-Villa.git"
+            className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
+          >
+            <Github className="mr-1" size={14} />
+            Github
+          </a>
+        </div>
+      </div>
+
+      {/* Project 6*/}
+      <div className="border border-gray-200 rounded-lg p-6 mt-6">
+        <div className="flex items-center mb-2">
+          <h3 className="text-xl font-bold">
+            Pixster - A wallpaper collection app
+          </h3>
+          <span className="ml-2 mt-2">🖼️</span>
+        </div>
+        <p className="text-gray-500 mb-4">August 2024 - September 2024</p>
+
+        <p className="text-gray-600 mb-2">
+          Built with Flutter, BLoC, HTTP, and Hive.
+        </p>
+        <p className="font-semibold mb-1">
+          A sleek wallpaper app to explore, download, and manage favorites
+        </p>
+        <p className="text-gray-600 mb-4">
+          Pixster offers a seamless experience for browsing and downloading
+          high-quality wallpapers, with search and favorites features for easy
+          access and personalization.
+        </p>
+
+        <div className="flex flex-wrap gap-2 mb-4">
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            Flutter
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            Dart
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            BLoC
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            HTTP
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            Hive
+          </span>
+        </div>
+
+        <div className="flex space-x-2">
+          <a
+            href="https://github.com/vivekupasani/Pixster-A-Wallpaper-Collection.git"
+            className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
+          >
+            <Github className="mr-1" size={14} />
+            Github
+          </a>
+        </div>
+      </div>
+
+      <span className="mt-4 flex items-center justify-center">
+        Code of all the project is available on github
+      </span>
+      <span className="mt-2 flex items-center justify-center">
+        © Vivek Upasani
+      </span>
     </div>
   );
 };

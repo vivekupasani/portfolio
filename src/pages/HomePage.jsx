@@ -191,9 +191,9 @@ const HomePage = () => {
             </p>
             <p className="font-semibold mb-1">A modern social media app</p>
             <p className="text-gray-600 mb-4">
-              Here users can share posts, discover people, and connect in
-              real-time. Firebase powers authentication and media storage, while
-              clean architecture ensures smooth, scalable performance.
+              Users can share posts, discover others, and connect in
+              real-time—powered by Firebase and clean architecture for smooth,
+              scalable performance.
             </p>
 
             <div className="flex flex-wrap gap-2 mb-4">
@@ -246,19 +246,24 @@ const HomePage = () => {
             <p className="text-gray-500 mb-4">March 2025 - March 2025</p>
 
             <p className="text-gray-600 mb-2">
-              Built with Ejs, Node.js, and Express.js.
+              Built with Html, Css, Ejs, Node.js, and Express.js.
             </p>
             <p className="font-semibold mb-1">
               Say goodbye to handcrafting mock data
             </p>
             <p className="text-gray-600 mb-4">
-              It offers high-performance mock APIs for developers, testers, and
-              businesses. It provides fast responses and realistic data, perfect
-              for learning API integration, testing, or prototyping—without the
-              need for a backend.
+              It delivers high-performance mock APIs with fast, realistic
+              responses—ideal for testing, prototyping, and learning without a
+              backend.
             </p>
 
             <div className="flex flex-wrap gap-2 mb-4">
+              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+                HTML
+              </span>
+              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+                CSS
+              </span>
               <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
                 EJS
               </span>
@@ -305,16 +310,14 @@ const HomePage = () => {
             <p className="text-gray-500 mb-4">November 2024 - December 2024</p>
 
             <p className="text-gray-600 mb-2">
-              Built with Flutter, Node.js, Express.js, Cloudinary and MongoDB.
+              Built with Flutter, Node.js, Express.js, Firebase and MongoDB.
             </p>
             <p className="font-semibold mb-1">
               A Google drive-style cloud storage app
             </p>
             <p className="text-gray-600 mb-4">
-              It provides a fast and reliable cloud storage solution for users
-              to upload, manage, and store media files securely. With Cloudinary
-              integration for media storage, CloudStash ensures smooth,
-              high-performance file management.
+              It offers fast, secure cloud storage with firebase integration for
+              seamless media upload, management, and performance.
             </p>
 
             <div className="flex flex-wrap gap-2 mb-4">
@@ -334,17 +337,17 @@ const HomePage = () => {
                 MongoDB
               </span>
               <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                Cloudinary
+                Firebase
               </span>
             </div>
 
             <div className="flex space-x-2">
               <a
-                href="#"
+                href="https://cloudstash-vivekupasani.onrender.com/"
                 className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
               >
                 <ExternalLink className="mr-1" size={14} />
-                Link to app
+                Website
               </a>
               <a
                 href="https://github.com/vivekupasani/cloudstash"
