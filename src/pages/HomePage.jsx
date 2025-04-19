@@ -2,6 +2,7 @@ import React from "react";
 import { Github, ExternalLink } from "lucide-react";
 import { motion } from "motion/react";
 import mylogo from "../assets/mylogo.png";
+import { Link } from "react-router-dom";
 const HomePage = () => {
   const skills = [
     "Kotlin",
@@ -126,7 +127,6 @@ const HomePage = () => {
               <div>
                 <div className="flex items-center">
                   <h3 className="text-lg font-medium">Freelancer</h3>
-                  <ExternalLink size={16} className="ml-2 text-gray-500" />
                 </div>
                 <p className="text-gray-600">
                   Full stack web & app developer - Freelancer
@@ -172,6 +172,10 @@ const HomePage = () => {
           >
             GitHub
           </a>{" "}
+          or go to{" "}
+          <Link to="/projects" className="text-gray-700 hover:text-black">
+            /projects
+          </Link>
           .
         </p>
 
@@ -211,9 +215,6 @@ const HomePage = () => {
               </span>
               <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
                 Clean Architecture
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                Get_it
               </span>
             </div>
 

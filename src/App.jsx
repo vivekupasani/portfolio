@@ -76,7 +76,8 @@ function App() {
           </motion.a>
           <motion.a
             whileHover={{ scale: 1.2 }}
-            href="*"
+            href="/Vivek_Upasani_FullStack.pdf"
+            download="Vivek_Upasani_Resume.pdf"
             className="p-2 rounded-full hover:bg-gray-100"
           >
             <FileText size={20} />

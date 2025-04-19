@@ -9,7 +9,7 @@ const Projects = () => {
         help developers write better code. I'm passionate about building
         products that enhance productivity and simplify the development process.{" "}
         <br />
-        Below are three of my projects — feel free to check out more on my{" "}
+        Below are six of my projects — feel free to check out more on my{" "}
         <a
           className="text-gray-700 hover:text-black"
           href="https://github.com/vivekupasani"
@@ -77,8 +77,6 @@ const Projects = () => {
           </div>
         </div>
 
-      
-
         {/* Project 2 */}
         <div className="border border-gray-200 rounded-lg p-6">
           <div className="flex items-center mb-2">
@@ -140,64 +138,64 @@ const Projects = () => {
         </div>
       </div>
 
-        {/* Project 3 */}
-        <div className="border border-gray-200 rounded-lg p-6">
-          <div className="flex items-center mb-2">
-            <h3 className="text-xl font-bold">
-              JSONBazaar - A free mock API's store
-            </h3>
-            <span className="ml-2 mt-2">🧩</span>
-          </div>
-          <p className="text-gray-500 mb-4">March 2025 - March 2025</p>
-
-          <p className="text-gray-600 mb-2">
-            Built with Ejs, Node.js, and Express.js.
-          </p>
-          <p className="font-semibold mb-1">
-            Say goodbye to handcrafting mock data
-          </p>
-          <p className="text-gray-600 mb-4">
-            It offers high-performance mock APIs for developers, testers, and
-            businesses. It provides fast responses and realistic data, perfect
-            for learning API integration, testing, or prototyping—without the
-            need for a backend.
-          </p>
-
-          <div className="flex flex-wrap gap-2 mb-4">
-            <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-              EJS
-            </span>
-            <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-              Node.js
-            </span>
-            <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-              Express.js
-            </span>
-            <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-              JavaScript
-            </span>
-            <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-              Render
-            </span>
-          </div>
-
-          <div className="flex space-x-2">
-            <a
-              href="https://jsonbazaar.onrender.com"
-              className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
-            >
-              <ExternalLink className="mr-1" size={14} />
-              Website
-            </a>
-            <a
-              href="https://github.com/vivekupasani/jsonbazaar"
-              className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
-            >
-              <Github className="mr-1" size={14} />
-              Github
-            </a>
-          </div>
+      {/* Project 3 */}
+      <div className="border border-gray-200 rounded-lg p-6">
+        <div className="flex items-center mb-2">
+          <h3 className="text-xl font-bold">
+            JSONBazaar - A free mock API's store
+          </h3>
+          <span className="ml-2 mt-2">🧩</span>
         </div>
+        <p className="text-gray-500 mb-4">March 2025 - March 2025</p>
+
+        <p className="text-gray-600 mb-2">
+          Built with Ejs, Node.js, and Express.js.
+        </p>
+        <p className="font-semibold mb-1">
+          Say goodbye to handcrafting mock data
+        </p>
+        <p className="text-gray-600 mb-4">
+          It offers high-performance mock APIs for developers, testers, and
+          businesses. It provides fast responses and realistic data, perfect for
+          learning API integration, testing, or prototyping—without the need for
+          a backend.
+        </p>
+
+        <div className="flex flex-wrap gap-2 mb-4">
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            EJS
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            Node.js
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            Express.js
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            JavaScript
+          </span>
+          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+            Render
+          </span>
+        </div>
+
+        <div className="flex space-x-2">
+          <a
+            href="https://jsonbazaar.onrender.com"
+            className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
+          >
+            <ExternalLink className="mr-1" size={14} />
+            Website
+          </a>
+          <a
+            href="https://github.com/vivekupasani/jsonbazaar"
+            className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
+          >
+            <Github className="mr-1" size={14} />
+            Github
+          </a>
+        </div>
+      </div>
 
       {/*Project 4 */}
       <div className="border border-gray-200 rounded-lg p-6 mt-6">
