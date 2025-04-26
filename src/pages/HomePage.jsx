@@ -359,6 +359,63 @@ const HomePage = () => {
               </a>
             </div>
           </div>
+
+          {/* Project 4 */}
+          <div className="border border-gray-200 rounded-lg p-6">
+            <div className="flex items-center mb-2">
+              <h3 className="text-xl font-bold">
+                DevunoAI - The AI-powered code review tool
+              </h3>
+              {/* <span className="ml-2 mt-2">🕵️‍♀️</span> */}
+            </div>
+            <p className="text-gray-500 mb-4">April 2025 - April 2025</p>
+
+            <p className="text-gray-600 mb-2">
+              Built with React.js, Node.js, Express.js, Motion, Gemini API.
+            </p>
+            <p className="font-semibold mb-1">
+              The AI-powered code review tool for developers
+            </p>
+            <p className="text-gray-600 mb-4">
+              It offers fast, secure code reviews with AI integration for
+              seamless code analysis, management, and performance.
+            </p>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+                React.js
+              </span>
+              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+                Motion
+              </span>
+              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+                Node.js
+              </span>
+              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+                Express.js
+              </span>
+              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
+                Motion
+              </span>
+            </div>
+
+            <div className="flex space-x-2">
+              <a
+                href="https://devuno.onrender.com/"
+                className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
+              >
+                <ExternalLink className="mr-1" size={14} />
+                Website
+              </a>
+              <a
+                href="https://github.com/vivekupasani/devuno"
+                className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
+              >
+                <Github className="mr-1" size={14} />
+                Github
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
