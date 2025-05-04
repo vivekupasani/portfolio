@@ -30,22 +30,82 @@ const HomePage = () => {
     "VSCode",
     "Postman",
   ];
+
+  const projects = [
+    {
+      title: "Pixsy - Full social media app",
+      duration: "August 2024 - October 2024",
+      description: "Built with Flutter, Firebase, and BLoC.",
+      details:
+        "Users can share posts, discover others, and connect in real-time—powered by Firebase and clean architecture for smooth, scalable performance.",
+      tags: ["Flutter", "Dart", "Firebase", "BLoC", "Clean Architecture"],
+      website: "https://pixsy-b2ccb.web.app/",
+      github: "https://github.com/vivekupasani/pixsy",
+    },
+    {
+      title: "JSONBazaar - A free mock API's store",
+      duration: "March 2025 - March 2025",
+      description: "Built with Html, Css, Ejs, Node.js, and Express.js.",
+      details:
+        "It delivers high-performance mock APIs with fast, realistic responses—ideal for testing, prototyping, and learning without a backend.",
+      tags: [
+        "HTML",
+        "CSS",
+        "EJS",
+        "Node.js",
+        "Express.js",
+        "JavaScript",
+        "Render",
+      ],
+      website: "https://jsonbazaar.onrender.com",
+      github: "https://github.com/vivekupasani/jsonbazaar",
+    },
+    {
+      title: "CloudStash - The ultimate cloud storage solution",
+      duration: "November 2024 - December 2024",
+      description:
+        "Built with Flutter, Node.js, Express.js, Firebase and MongoDB.",
+      details:
+        "It offers fast, secure cloud storage with firebase integration for seamless media upload, management, and performance.",
+      tags: ["Flutter", "Dart", "Node.js", "Express.js", "MongoDB", "Firebase"],
+      website: "https://cloudstash-vivekupasani.onrender.com/",
+      github: "https://github.com/vivekupasani/cloudstash",
+    },
+    {
+      title: "DevunoAI - The AI-powered code review tool",
+      duration: "April 2025 - April 2025",
+      description:
+        "Built with React.js, Node.js, Express.js, Motion, Gemini API.",
+      details:
+        "It offers fast, secure code reviews with AI integration for seamless code analysis, management, and performance.",
+      tags: ["React.js", "Motion", "Node.js", "Express.js"],
+      website: "https://devuno.onrender.com/",
+      github: "https://github.com/vivekupasani/devuno",
+    },
+  ];
+
   return (
     <div className="max-w-4xl mx-auto px-4">
       {/* Hero Section */}
-      <div className="flex flex-col md:flex-row items-center justify-between py-12">
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, bounce: 0.25, delay: 0.2 }}
+        exit={{ opacity: 0, y: 50 }}
+        className="flex flex-col md:flex-row items-center justify-between py-12"
+      >
         <div className="md:mr-8">
-          <h1 className="text-4xl font-bold mb-2">Hi, I'm Vivek</h1>
+          <h1 className="text-3xl font-bold mb-2">Hi, I'm Vivek</h1>
           <p className="flex items-center text-gray-600 mb-4">
             <span className="h-2 w-2 bg-pink-500 rounded-full mr-2"></span>
             Based in India
           </p>
-          <p className="text-lg text-gray-700 mb-4">
+          <p className="text-25 text-gray-700 mb-4">
             I'm a full-stack developer with a strong foundation in mobile app
             development and a growing expertise in MongoDB, Express.js,
             React.js, Node.js.
           </p>
-          <p className="text-gray-700 mb-6 ">
+          <p className="text-gray-700 mb-6 text-20 ">
             For quick connect just drop me a Hey! on X, I'm pretty active there.
           </p>
 
@@ -79,21 +139,30 @@ const HomePage = () => {
         </div>
         <motion.div
           initial={{ opacity: 0, rotate: 0 }}
-          animate={{ opacity: 1, rotate: 0 }}
+          animate={{ opacity: 1, rotate: 0, delay: 10 }}
           transition={{ duration: 0.5, bounce: 0.25 }}
           whileHover={{ scale: 1.05, rotate: 1 }}
           className="hover:shadow-fuchsia-400 w-88 h-58 rotate-2 rounded-full overflow-hidden shadow-lg shadow-gray-500 hidden md:block"
         >
-          <img
+          <motion.img
             src={mylogo}
+            initial={{ opacity: 0, rotate: 0 }}
+            animate={{ opacity: 1, rotate: 0, delay: 10 }}
+            transition={{ duration: 0.5, bounce: 0.25 }}
             alt="Vivek Upasani"
             className="w-full h-full object-cover shadow-lg shadow-gray-500 rounded-full"
           />
         </motion.div>
-      </div>
+      </motion.div>
 
       {/* Work Experience */}
-      <div className="md:py-8">
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -50 }}
+        transition={{ duration: 0.5, bounce: 0.25, delay: 0.2 }}
+        className="md:py-8"
+      >
         <h2 className="text-2xl font-bold mb-6">Work Experience</h2>
 
         <div className="mb-6">
@@ -104,7 +173,7 @@ const HomePage = () => {
               </div>
               <div>
                 <div className="flex items-center">
-                  <h3 className="text-lg font-medium">
+                  <h3 className="text-40 font-medium">
                     Charotar Education Society
                   </h3>
                   <a href="https://cesociety.in/">
@@ -126,7 +195,7 @@ const HomePage = () => {
               </div>
               <div>
                 <div className="flex items-center">
-                  <h3 className="text-lg font-medium">Freelancer</h3>
+                  <h3 className="text-40 font-medium">Freelancer</h3>
                 </div>
                 <p className="text-gray-600">
                   Full stack web & app developer - Freelancer
@@ -136,31 +205,49 @@ const HomePage = () => {
             <p className="ml-13 sm:text-gray-500">May 2024 - Jan 2025</p>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Skills */}
-      <div className="py-8">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -50 }}
+        transition={{ duration: 0.5, bounce: 0.25, delay: 0.1 }}
+        className="py-8"
+      >
         <h2 className="text-2xl font-bold mb-6">Skills</h2>
         <div className="flex flex-wrap gap-2">
           {skills.map((skill, index) => (
             <motion.span
               whileHover={{
-                scale: 1.2,
+                marginLeft: "10px",
+                marginRight: "10px",
+                shadow: "lg",
+                scale: 1.1,
+                boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
                 transition: { duration: 0.2, bounce: 0.25 },
               }}
               key={index}
-              className="bg-black  text-white px-3 py-1 rounded-full"
+              className="bg-black text-sm text-white px-3 py-1.5 rounded-full"
             >
               {skill}
             </motion.span>
           ))}
         </div>
-      </div>
+      </motion.div>
 
       {/* Latest Work */}
-      <div className="py-8">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-4 ">Projects</h2>
-        <p className="text-gray-600 mb-8">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -50 }}
+        transition={{ duration: 0.5, bounce: 0.25, delay: 0.1 }}
+        className="py-8"
+      >
+        <h2 className="text-2xl sm:text-3xl font-npm font-bold mb-4 ">
+          Projects
+        </h2>
+        <p className="text-gray-600 text-25 mb-8">
           I'm currently working on an AI-powered code review SaaS tool designed
           to help developers write better code. I'm passionate about building
           products that enhance productivity and simplify the development
@@ -179,248 +266,66 @@ const HomePage = () => {
           .
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Project 1 */}
-          <div className="border border-gray-200 rounded-lg p-6">
-            <div className="flex items-center mb-2">
-              <h3 className="text-xl font-bold">
-                Pixsy - Full social media app
-              </h3>
-              <span className="ml-2 mt-2">🕸️</span>
-            </div>
-            <p className="text-gray-500 mb-4">August 2024 - October 2024</p>
-
-            <p className="tex t-gray-600 mb-2">
-              Built with Flutter, Firebase, and BLoC.
-            </p>
-            <p className="font-semibold mb-1">A modern social media app</p>
-            <p className="text-gray-600 mb-4">
-              Users can share posts, discover others, and connect in
-              real-time—powered by Firebase and clean architecture for smooth,
-              scalable performance.
-            </p>
-
-            <div className="flex flex-wrap gap-2 mb-4">
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                Flutter
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                Dart
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                Firebase
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                BLoC
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                Clean Architecture
-              </span>
-            </div>
-
-            <div className="flex space-x-2">
-              <a
-                href="https://pixsy-b2ccb.web.app/"
-                className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
-              >
-                <ExternalLink className="mr-1" size={14} />
-                Website
-              </a>
-              <a
-                href="https://github.com/vivekupasani/pixsy"
-                className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
-              >
-                <Github className="mr-1" size={14} />
-                Github
-              </a>
-            </div>
-          </div>
-
-          {/* Project 2 */}
-          <div className="border border-gray-200 rounded-lg p-6">
-            <div className="flex items-center mb-2">
-              <h3 className="text-xl font-bold">
-                JSONBazaar - A free mock API's store
-              </h3>
-              <span className="ml-2 mt-2">🧩</span>
-            </div>
-            <p className="text-gray-500 mb-4">March 2025 - March 2025</p>
-
-            <p className="text-gray-600 mb-2">
-              Built with Html, Css, Ejs, Node.js, and Express.js.
-            </p>
-            <p className="font-semibold mb-1">
-              Say goodbye to handcrafting mock data
-            </p>
-            <p className="text-gray-600 mb-4">
-              It delivers high-performance mock APIs with fast, realistic
-              responses—ideal for testing, prototyping, and learning without a
-              backend.
-            </p>
-
-            <div className="flex flex-wrap gap-2 mb-4">
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                HTML
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                CSS
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                EJS
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                Node.js
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                Express.js
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                JavaScript
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                Render
-              </span>
-            </div>
-
-            <div className="flex space-x-2">
-              <a
-                href="https://jsonbazaar.onrender.com"
-                className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
-              >
-                <ExternalLink className="mr-1" size={14} />
-                Website
-              </a>
-              <a
-                href="https://github.com/vivekupasani/jsonbazaar"
-                className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
-              >
-                <Github className="mr-1" size={14} />
-                Github
-              </a>
-            </div>
-          </div>
-
-          {/* Project 3 */}
-          <div className="border border-gray-200 rounded-lg p-6">
-            <div className="flex items-center mb-2">
-              <h3 className="text-xl font-bold">
-                CloudStash - The ultimate cloud storage solution
-              </h3>
-              <span className="ml-2 mt-2">☁️</span>
-            </div>
-            <p className="text-gray-500 mb-4">November 2024 - December 2024</p>
-
-            <p className="text-gray-600 mb-2">
-              Built with Flutter, Node.js, Express.js, Firebase and MongoDB.
-            </p>
-            <p className="font-semibold mb-1">
-              A Google drive-style cloud storage app
-            </p>
-            <p className="text-gray-600 mb-4">
-              It offers fast, secure cloud storage with firebase integration for
-              seamless media upload, management, and performance.
-            </p>
-
-            <div className="flex flex-wrap gap-2 mb-4">
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                Flutter
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                Dart
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                Node.js
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                Express.js
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                MongoDB
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                Firebase
-              </span>
-            </div>
-
-            <div className="flex space-x-2">
-              <a
-                href="https://cloudstash-vivekupasani.onrender.com/"
-                className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
-              >
-                <ExternalLink className="mr-1" size={14} />
-                Website
-              </a>
-              <a
-                href="https://github.com/vivekupasani/cloudstash"
-                className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
-              >
-                <Github className="mr-1" size={14} />
-                Github
-              </a>
-            </div>
-          </div>
-
-          {/* Project 4 */}
-          <div className="border border-gray-200 rounded-lg p-6">
-            <div className="flex items-center mb-2">
-              <h3 className="text-xl font-bold">
-                DevunoAI - The AI-powered code review tool
-              </h3>
-              {/* <span className="ml-2 mt-2">🕵️‍♀️</span> */}
-            </div>
-            <p className="text-gray-500 mb-4">April 2025 - April 2025</p>
-
-            <p className="text-gray-600 mb-2">
-              Built with React.js, Node.js, Express.js, Motion, Gemini API.
-            </p>
-            <p className="font-semibold mb-1">
-              The AI-powered code review tool for developers
-            </p>
-            <p className="text-gray-600 mb-4">
-              It offers fast, secure code reviews with AI integration for
-              seamless code analysis, management, and performance.
-            </p>
-
-            <div className="flex flex-wrap gap-2 mb-4">
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                React.js
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                Motion
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                Node.js
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                Express.js
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
-                Motion
-              </span>
-            </div>
-
-            <div className="flex space-x-2">
-              <a
-                href="https://devuno.onrender.com/"
-                className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
-              >
-                <ExternalLink className="mr-1" size={14} />
-                Website
-              </a>
-              <a
-                href="https://github.com/vivekupasani/devuno"
-                className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
-              >
-                <Github className="mr-1" size={14} />
-                Github
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, bounce: 0.25, delay: 0.1 }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        >
+          {projects.map((project, index) => (
+            <motion.div
+              whileHover={{
+                scale: 1.01,
+                boxShadow: "0 0 10px rgb(231, 187, 255)",
+                transition: { duration: 0.2, bounce: 0.25 },
+              }}
+              key={index}
+              className="border border-gray-200 rounded-lg p-6"
+            >
+              <div className="flex items-center mb-2">
+                <h3 className="text-xl font-bold">{project.title}</h3>
+              </div>
+              <p className="text-gray-500 mb-4">{project.duration}</p>
+              <p className="text-gray-600 mb-2">{project.description}</p>
+              <p className="font-semibold mb-1">{project.details}</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.tags.map((tag, tagIndex) => (
+                  <span
+                    key={tagIndex}
+                    className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <div className="flex space-x-2">
+                <a
+                  href={project.website}
+                  className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
+                >
+                  <ExternalLink className="mr-1" size={14} />
+                  Website
+                </a>
+                <a
+                  href={project.github}
+                  className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
+                >
+                  <Github className="mr-1" size={14} />
+                  Github
+                </a>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
 
       {/* Contact */}
-      <div className="py-16">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, bounce: 0.25, delay: 0.1 }}
+        className="py-16"
+      >
         <div className="text-center">
           <span className="inline-block bg-black text-white px-4 py-1 rounded-md text-sm mb-4">
             Contact
@@ -438,8 +343,8 @@ const HomePage = () => {
           </p>
           <p className="text-gray-600">I respond the quickest to mails.</p>
         </div>
-      </div>
-      <p className="text-center text-gray-300 p-10">
+      </motion.div>
+      <p className="text-center text-gray-100 p-10">
         The portfolio design is inspired from{" "}
         <a
           className=" underline underline-offset-3 hover:text-black"

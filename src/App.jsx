@@ -21,31 +21,9 @@ import {
 } from "lucide-react";
 function App() {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{
-        ease: ["anticipate", "anticipate"],
-        duration: 2,
-        type: "tween",
-      }}
-      className="min-h-screen bg-white"
-    >
+    <motion.div className="min-h-screen bg-white">
       {/* Navigation */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{
-          type: "spring",
-          stiffness: 100,
-          damping: 20,
-          mass: 0.5,
-          duration: 3,
-        }}
-        className="flex justify-center pt-8 pb-4"
-      >
+      <motion.div className="flex justify-center pt-8 pb-4">
         <div className="flex items-center bg-white rounded-full shadow-md px-4 py-2 space-x-4">
           <Link to="/" className="p-2 rounded-full hover:bg-gray-100">
             <Home size={20} />

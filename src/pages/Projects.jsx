@@ -1,8 +1,13 @@
 import React from "react";
 import { Github, ExternalLink } from "lucide-react";
+import { motion } from "motion/react";
 const Projects = () => {
   return (
-    <div className="py-8 max-w-4xl mx-auto px-4">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      className="py-8 max-w-4xl mx-auto px-4"
+    >
       <h2 className="text-4xl sm:text-3xl font-bold mb-4 ">Projects</h2>
       <p className="text-gray-600 mb-8">
         I'm currently working on an AI-powered code review SaaS tool designed to
@@ -21,7 +26,16 @@ const Projects = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
         {/* Project 1 */}
-        <div className="border border-gray-200 rounded-lg p-6">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{
+            scale: 1.01,
+            boxShadow: "0 0 10px rgb(231, 187, 255)",
+            transition: { duration: 0.2, bounce: 0.25 },
+          }}
+          className="border border-gray-200 rounded-lg p-6"
+        >
           <div className="flex items-center mb-2">
             <h3 className="text-xl font-bold">Pixsy - Full social media app</h3>
             <span className="ml-2 mt-2">🕸️</span>
@@ -75,10 +89,19 @@ const Projects = () => {
               Github
             </a>
           </div>
-        </div>
+        </motion.div>
 
         {/* Project 2 */}
-        <div className="border border-gray-200 rounded-lg p-6">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{
+            scale: 1.01,
+            boxShadow: "0 0 10px rgb(231, 187, 255)",
+            transition: { duration: 0.2, bounce: 0.25 },
+          }}
+          className="border border-gray-200 rounded-lg p-6"
+        >
           <div className="flex items-center mb-2">
             <h3 className="text-xl font-bold">
               DevunoAI - The AI-powered code review tool
@@ -133,10 +156,20 @@ const Projects = () => {
               Github
             </a>
           </div>
-        </div>
+        </motion.div>
 
         {/* Project 3 */}
-        <div className="border border-gray-200 rounded-lg p-6">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{
+            scale: 1.01,
+            boxShadow: "0 0 10px rgb(231, 187, 255)",
+            transition: { duration: 0.2, bounce: 0.25 },
+          }}
+          className="border border-gray-200 rounded-lg p-6"
+        >
+          {" "}
           <div className="flex items-center mb-2">
             <h3 className="text-xl font-bold">
               CloudStash - The ultimate cloud storage solution
@@ -144,7 +177,6 @@ const Projects = () => {
             <span className="ml-2 mt-2">☁️</span>
           </div>
           <p className="text-gray-500 mb-4">November 2024 - December 2024</p>
-
           <p className="text-gray-600 mb-2">
             Built with Flutter, Node.js, Express.js, Firebase and MongoDB.
           </p>
@@ -155,7 +187,6 @@ const Projects = () => {
             It offers fast, secure cloud storage with firebase integration for
             seamless media upload, management, and performance.
           </p>
-
           <div className="flex flex-wrap gap-2 mb-4">
             <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
               Flutter
@@ -176,7 +207,6 @@ const Projects = () => {
               Firebase
             </span>
           </div>
-
           <div className="flex space-x-2">
             <a
               href="https://cloudstash-vivekupasani.onrender.com/"
@@ -193,11 +223,21 @@ const Projects = () => {
               Github
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* Project 4 */}
-      <div className="border border-gray-200 rounded-lg p-6">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        whileHover={{
+          scale: 1.01,
+          boxShadow: "0 0 10px rgb(231, 187, 255)",
+          transition: { duration: 0.2, bounce: 0.25 },
+        }}
+        className="border border-gray-200 rounded-lg p-6 mt-6"
+      >
+        {" "}
         <div className="flex items-center mb-2">
           <h3 className="text-xl font-bold">
             JSONBazaar - A free mock API's store
@@ -205,7 +245,6 @@ const Projects = () => {
           <span className="ml-2 mt-2">🧩</span>
         </div>
         <p className="text-gray-500 mb-4">March 2025 - March 2025</p>
-
         <p className="text-gray-600 mb-2">
           Built with Ejs, Node.js, and Express.js.
         </p>
@@ -218,7 +257,6 @@ const Projects = () => {
           learning API integration, testing, or prototyping—without the need for
           a backend.
         </p>
-
         <div className="flex flex-wrap gap-2 mb-4">
           <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
             EJS
@@ -236,7 +274,6 @@ const Projects = () => {
             Render
           </span>
         </div>
-
         <div className="flex space-x-2">
           <a
             href="https://jsonbazaar.onrender.com"
@@ -253,10 +290,20 @@ const Projects = () => {
             Github
           </a>
         </div>
-      </div>
+      </motion.div>
 
       {/*Project 5 */}
-      <div className="border border-gray-200 rounded-lg p-6 mt-6">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        whileHover={{
+          scale: 1.01,
+          boxShadow: "0 0 10px rgb(231, 187, 255)",
+          transition: { duration: 0.2, bounce: 0.25 },
+        }}
+        className="border border-gray-200 rounded-lg p-6 mt-6"
+      >
+        {" "}
         <div className="flex items-center mb-2">
           <h3 className="text-xl font-bold">
             ChatApp - Real-time chat & social experience
@@ -264,7 +311,6 @@ const Projects = () => {
           <span className="ml-2 mt-2">💬</span>
         </div>
         <p className="text-gray-500 mb-4">December 2024 - January 2025</p>
-
         <p className="text-gray-600 mb-2">
           Built with Kotlin, Firebase, and MVVM Architecture.
         </p>
@@ -276,7 +322,6 @@ const Projects = () => {
           enjoy light/dark themes—all with Firebase-powered backend and clean
           UI.
         </p>
-
         <div className="flex flex-wrap gap-2 mb-4">
           <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
             Kotlin
@@ -306,7 +351,6 @@ const Projects = () => {
             Material Design
           </span>
         </div>
-
         <div className="flex space-x-2">
           <a
             href="https://github.com/vivekupasani/chatapp.git"
@@ -316,10 +360,20 @@ const Projects = () => {
             Github
           </a>
         </div>
-      </div>
+      </motion.div>
 
       {/* Project 6*/}
-      <div className="border border-gray-200 rounded-lg p-6 mt-6">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0,}}
+        whileHover={{
+          scale: 1.01,
+          boxShadow: "0 0 10px rgb(231, 187, 255)",
+          transition: { duration: 0.2, bounce: 0.25 },
+        }}
+        className="border border-gray-200 rounded-lg p-6 mt-6"
+      >
+        {" "}
         <div className="flex items-center mb-2">
           <h3 className="text-xl font-bold">
             Food Villa - Your personal recipe book
@@ -327,7 +381,6 @@ const Projects = () => {
           <span className="ml-2 mt-2">🍽️</span>
         </div>
         <p className="text-gray-500 mb-4">September 2024 - October 2024</p>
-
         <p className="text-gray-600 mb-2">
           Built with Kotlin, MVVM, Retrofit, Room, and more.
         </p>
@@ -339,7 +392,6 @@ const Projects = () => {
           clean UI. Whether you're a beginner or a pro, explore and prepare
           meals effortlessly.
         </p>
-
         <div className="flex flex-wrap gap-2 mb-4">
           <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
             Kotlin
@@ -369,7 +421,6 @@ const Projects = () => {
             Glide
           </span>
         </div>
-
         <div className="flex space-x-2">
           <a
             href="https://github.com/vivekupasani/Food-Villa.git"
@@ -379,10 +430,20 @@ const Projects = () => {
             Github
           </a>
         </div>
-      </div>
+      </motion.div>
 
       {/* Project 7*/}
-      <div className="border border-gray-200 rounded-lg p-6 mt-6">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        whileHover={{
+          scale: 1.01,
+          boxShadow: "0 0 10px rgb(231, 187, 255)",
+          transition: { duration: 0.2, bounce: 0.25 },
+        }}
+        className="border border-gray-200 rounded-lg p-6 mt-6"
+      >
+        {" "}
         <div className="flex items-center mb-2">
           <h3 className="text-xl font-bold">
             Pixster - A wallpaper collection app
@@ -390,7 +451,6 @@ const Projects = () => {
           <span className="ml-2 mt-2">🖼️</span>
         </div>
         <p className="text-gray-500 mb-4">August 2024 - September 2024</p>
-
         <p className="text-gray-600 mb-2">
           Built with Flutter, BLoC, HTTP, and Hive.
         </p>
@@ -402,7 +462,6 @@ const Projects = () => {
           high-quality wallpapers, with search and favorites features for easy
           access and personalization.
         </p>
-
         <div className="flex flex-wrap gap-2 mb-4">
           <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm">
             Flutter
@@ -420,7 +479,6 @@ const Projects = () => {
             Hive
           </span>
         </div>
-
         <div className="flex space-x-2">
           <a
             href="https://github.com/vivekupasani/Pixster-A-Wallpaper-Collection.git"
@@ -430,15 +488,15 @@ const Projects = () => {
             Github
           </a>
         </div>
-      </div>
+      </motion.div>
 
-      <span className="mt-4 flex items-center justify-center">
+      <span className="mt-4 flex items-center justify-center text-gray-300">
         Code of all the project is available on github
       </span>
-      <span className="mt-2 flex items-center justify-center">
+      <span className="mt-2 flex items-center justify-center text-gray-300">
         © Vivek Upasani
       </span>
-    </div>
+    </motion.div>
   );
 };
 
