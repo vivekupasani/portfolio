@@ -248,8 +248,7 @@ const HomePage = () => {
           Projects
         </h2>
         <p className="text-gray-600 text-25 mb-8">
-          I'm currently working on an AI-powered code review SaaS tool designed
-          to help developers write better code. I'm passionate about building
+          I'm currently working on an artificial intelligence voice command app and website. I'm passionate about building
           products that enhance productivity and simplify the development
           process. <br />
           Below are three of my projects — feel free to check out more on my{" "}
