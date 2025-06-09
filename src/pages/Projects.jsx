@@ -365,7 +365,7 @@ const Projects = () => {
       {/* Project 6*/}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0,}}
+        whileInView={{ opacity: 1, y: 0 }}
         whileHover={{
           scale: 1.01,
           boxShadow: "0 0 10px rgb(231, 187, 255)",
