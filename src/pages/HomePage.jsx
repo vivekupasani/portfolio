@@ -3,6 +3,7 @@ import { Github, ExternalLink } from "lucide-react";
 import { motion } from "motion/react";
 import mylogo from "../assets/mylogo.png";
 import { Link } from "react-router-dom";
+
 const HomePage = () => {
   const skills = [
     "Kotlin",
@@ -103,32 +104,32 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto px-4">
+    <div className="max-w-3xl mx-auto px-4">
       {/* Hero Section */}
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, bounce: 0.25, delay: 0.2 }}
         exit={{ opacity: 0, y: 50 }}
-        className="flex flex-col md:flex-row items-center justify-between py-12"
+        className="flex flex-col md:flex-row items-center justify-between py-6"
       >
         <div className="md:mr-8">
-          <h1 className="text-  xl font-bold mb-2">Hi, I'm Vivek</h1>
-          <p className="flex items-center text-gray-600 mb-4">
-            <span className="h-2 w-2 bg-pink-500 rounded-full mr-2"></span>
+          <h1 className="text-2xl font-bold mb-1">Hi, I'm Vivek</h1>
+          <p className="flex items-center text-gray-600 mb-2 text-sm">
+            <span className="h-1.5 w-1.5 bg-pink-500 rounded-full mr-2"></span>
             Based in India
           </p>
-          <p className="text-25 text-gray-700 mb-4">
+          <p className="text-sm text-gray-700 mb-2 leading-relaxed">
             I'm a skilled full-stack and mobile developer with expertise in
             Flutter, React Native, Node.js, and Web3. Passionate about building
             scalable apps using modern tech like Firebase, Solidity, and Clean
             Architecture.
           </p>
-          <p className="text-gray-700 mb-6 text-20 ">
+          <p className="text-gray-700 mb-3 text-xs">
             For quick connect just drop me a Hey! on X, I'm pretty active there.
           </p>
 
-          <div className="flex space-x-4 mb-8">
+          <div className="flex space-x-2 mb-4">
             <motion.a
               whileHover={{
                 shadow: "lg",
@@ -137,10 +138,10 @@ const HomePage = () => {
                 scale: 1.05,
               }}
               href="https://x.com/VIVEKUpasani2"
-              className="flex items-center bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800"
+              className="flex items-center bg-black text-white px-3 py-3 rounded-md hover:bg-gray-800 text-xs"
             >
-              <span className="mr-2">Discuss Your Project</span>
-              <ExternalLink size={16} />
+              <span className="mr-1">Discuss Your Project</span>
+              <ExternalLink size={12} />
             </motion.a>
             <motion.a
               whileHover={{
@@ -150,7 +151,7 @@ const HomePage = () => {
                 scale: 1.05,
               }}
               href="mailto:vivekupasani984@gmail.com"
-              className="bg-gray-900 text-white px-6 py-3 rounded-md hover:bg-gray-700"
+              className="bg-gray-900 text-white px-3 py-3 rounded-md hover:bg-gray-700 text-xs"
             >
               Hire
             </motion.a>
@@ -161,7 +162,7 @@ const HomePage = () => {
           animate={{ opacity: 1, rotate: 0, delay: 10 }}
           transition={{ duration: 0.5, bounce: 0.25 }}
           whileHover={{ scale: 1.05, rotate: 1 }}
-          className="hover:shadow-fuchsia-400 w-108 h-48  rotate-2 overflow-hidden rounded-lg shadow-lg shadow-gray-500 hidden md:block"
+          className="hover:shadow-fuchsia-400 w-78 h-36 rotate-2 overflow-hidden rounded-lg shadow-lg shadow-gray-500 hidden md:block"
         >
           <motion.img
             src={mylogo}
@@ -169,7 +170,7 @@ const HomePage = () => {
             animate={{ opacity: 1, rotate: 0, delay: 10 }}
             transition={{ duration: 0.5, bounce: 0.25 }}
             alt="Vivek Upasani"
-            className="w-full h-full object-cover shadow-lg shadow-gray-500 rounded-lg"
+            className="w-200 h-full object-cover shadow-lg shadow-gray-500 rounded-lg"
           />
         </motion.div>
       </motion.div>
@@ -180,48 +181,50 @@ const HomePage = () => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -50 }}
         transition={{ duration: 0.5, bounce: 0.25, delay: 0.2 }}
-        className="md:py-8"
+        className="md:py-4"
       >
-        <h2 className="text-2xl font-bold mb-6">Work Experience</h2>
+        <h2 className="text-lg font-bold mb-3">Work Experience</h2>
 
-        <div className="mb-6">
+        <div className="mb-3">
           <div className="flex flex-wrap items-center justify-between mb-1">
             <div className="flex items-center">
-              <div className="bg-gray-800 text-white w-10 h-10 rounded-full flex items-center justify-center mr-3">
-                <span className="font-bold">C</span>
+              <div className="bg-gray-800 text-white w-7 h-7 rounded-full flex items-center justify-center mr-2">
+                <span className="font-bold text-xs">C</span>
               </div>
               <div>
                 <div className="flex items-center">
-                  <h3 className="text-40 font-medium">
+                  <h3 className="text-sm font-medium">
                     Charotar Education Society
                   </h3>
                   <a href="https://cesociety.in/">
-                    <ExternalLink size={16} className="ml-2 text-gray-500" />
+                    <ExternalLink size={12} className="ml-1 text-gray-500" />
                   </a>
                 </div>
-                <p className="text-gray-600">Software Developer - Internship</p>
+                <p className="text-gray-600 text-xs">
+                  Software Developer - Internship
+                </p>
               </div>
             </div>
-            <p className="ml-13 sm:text-gray-500">Dec 2024 - Apr-2025</p>
+            <p className="ml-9 sm:text-gray-500 text-xs">Dec 2024 - Apr-2025</p>
           </div>
         </div>
 
-        <div className="mb-6">
+        <div className="mb-3">
           <div className="flex flex-wrap items-center justify-between mb-1">
             <div className="flex items-center">
-              <div className="bg-gray-800 text-white w-10 h-10 rounded-full flex items-center justify-center mr-3">
-                <span className="font-bold">F</span>
+              <div className="bg-gray-800 text-white w-7 h-7 rounded-full flex items-center justify-center mr-2">
+                <span className="font-bold text-xs">F</span>
               </div>
               <div>
                 <div className="flex items-center">
-                  <h3 className="text-40 font-medium">Freelancer</h3>
+                  <h3 className="text-sm font-medium">Freelancer</h3>
                 </div>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-xs">
                   Full stack web & app developer - Freelancer
                 </p>
               </div>
             </div>
-            <p className="ml-13 sm:text-gray-500">May 2024 - Jan 2025</p>
+            <p className="ml-9 sm:text-gray-500 text-xs">May 2024 - Jan 2025</p>
           </div>
         </div>
       </motion.div>
@@ -232,22 +235,22 @@ const HomePage = () => {
         whileInView={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -50 }}
         transition={{ duration: 0.5, bounce: 0.25, delay: 0.1 }}
-        className="py-8"
+        className="py-4"
       >
-        <h2 className="text-2xl font-bold mb-6">Skills</h2>
+        <h2 className="text-lg font-bold mb-3">Skills</h2>
         <div className="flex flex-wrap gap-2">
           {skills.map((skill, index) => (
             <motion.span
               whileHover={{
-                marginLeft: "10px",
-                marginRight: "10px",
+                marginLeft: "6px",
+                marginRight: "6px",
                 shadow: "lg",
-                scale: 1.1,
-                boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
+                scale: 1.05,
+                boxShadow: "0 0 8px rgba(0, 0, 0, 0.3)",
                 transition: { duration: 0.2, bounce: 0.25 },
               }}
               key={index}
-              className="bg-black text-sm text-white px-3 py-1.5 rounded-full"
+              className="bg-black text-xs text-white p-2 rounded-lg"
             >
               {skill}
             </motion.span>
@@ -261,12 +264,10 @@ const HomePage = () => {
         whileInView={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -50 }}
         transition={{ duration: 0.5, bounce: 0.25, delay: 0.1 }}
-        className="py-8"
+        className="py-6"
       >
-        <h2 className="text-2xl sm:text-3xl font-npm font-bold mb-4 ">
-          Projects
-        </h2>
-        <p className="text-gray-600 text-25 mb-8">
+        <h2 className="text-xl sm:text-2xl font-bold mb-3">Projects</h2>
+        <p className="text-gray-600 text-sm mb-6">
           I'm currently exploring Web3 by building decentralized applications
           and smart contract integrations. I'm passionate about creating
           products that empower users and push the boundaries of blockchain
@@ -286,7 +287,7 @@ const HomePage = () => {
           .
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -297,24 +298,26 @@ const HomePage = () => {
                 boxShadow: "#fff",
                 transition: { duration: 0.2, bounce: 0.25 },
               }}
-              className="border border-gray-200 rounded-lg p-6"
+              className="border border-gray-200 rounded-lg p-4"
             >
               <div className="flex items-center mb-2">
-                <h3 className="text-xl font-bold">{project.title}</h3>
+                <h3 className="text-lg font-bold">{project.title}</h3>
                 {project.icon && (
-                  <span className="ml-2 mt-2">{project.icon}</span>
+                  <span className="ml-2 text-sm">{project.icon}</span>
                 )}
               </div>
-              <p className="text-gray-500 mb-4">{project.date}</p>
-              <p className="text-gray-600 mb-2">{project.description}</p>
-              <p className="font-semibold mb-1">{project.summary}</p>
-              <p className="text-gray-600 mb-4">{project.details}</p>
+              <p className="text-gray-500 mb-3 text-xs">{project.date}</p>
+              <p className="text-gray-600 mb-2 text-sm">
+                {project.description}
+              </p>
+              <p className="font-semibold mb-1 text-sm">{project.summary}</p>
+              <p className="text-gray-600 mb-3 text-sm">{project.details}</p>
 
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-1 mb-3">
                 {project.techStack.map((tech, idx) => (
                   <span
                     key={idx}
-                    className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm"
+                    className="bg-gray-200 text-gray-800 px-2 py-1 rounded-md text-xs"
                   >
                     {tech}
                   </span>
@@ -325,27 +328,27 @@ const HomePage = () => {
                 {project.website && (
                   <a
                     href={project.website}
-                    className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
+                    className="flex items-center bg-gray-800 text-white px-2 py-1 rounded-md text-xs hover:bg-gray-700"
                   >
-                    <ExternalLink className="mr-1" size={14} />
+                    <ExternalLink className="mr-1" size={12} />
                     Website
                   </a>
                 )}
                 {project.github && (
                   <a
                     href={project.github}
-                    className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
+                    className="flex items-center bg-gray-800 text-white px-2 py-1 rounded-md text-xs hover:bg-gray-700"
                   >
-                    <Github className="mr-1" size={14} />
+                    <Github className="mr-1" size={12} />
                     Github
                   </a>
                 )}
                 {project.preview && (
                   <a
                     href={project.github}
-                    className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
+                    className="flex items-center bg-gray-800 text-white px-2 py-1 rounded-md text-xs hover:bg-gray-700"
                   >
-                    <Github className="mr-1" size={14} />
+                    <Github className="mr-1" size={12} />
                     Preview
                   </a>
                 )}
@@ -360,14 +363,14 @@ const HomePage = () => {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, bounce: 0.25, delay: 0.1 }}
-        className="py-16"
+        className="py-12"
       >
         <div className="text-center">
-          <span className="inline-block bg-black text-white px-4 py-1 rounded-md text-sm mb-4">
+          <span className="inline-block bg-black text-white px-3 py-1 rounded-md text-xs mb-3">
             Contact
           </span>
-          <h2 className="text-5xl font-bold mb-6">Get in Touch</h2>
-          <p className="text-xl text-gray-600 mb-2">
+          <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
+          <p className="text-lg text-gray-600 mb-2">
             Looking to hire? Just send me a mail{" "}
             <a
               href="mailto:vivekupasani984@gmail.com"
@@ -377,10 +380,12 @@ const HomePage = () => {
             </a>
             .
           </p>
-          <p className="text-gray-600">I respond the quickest to mails.</p>
+          <p className="text-gray-600 text-sm">
+            I respond the quickest to mails.
+          </p>
         </div>
       </motion.div>
-      <p className="text-center text-gray-100 p-10">
+      <p className="text-center text-gray-100 p-6 text-sm">
         The portfolio design is inspired from{" "}
         <a
           className=" underline underline-offset-3 hover:text-black"

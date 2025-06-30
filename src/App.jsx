@@ -24,7 +24,7 @@ function App() {
     <motion.div className="min-h-screen bg-white">
       {/* Navigation */}
       <motion.div className="flex justify-center pt-8 pb-4">
-        <div className="flex items-center justify-center bg-white rounded-full shadow-md px-4 py-2 space-x-4">
+        <div className="flex items-center justify-center bg-white rounded-full shadow-md px-4 py-2 space-x-2">
           <Link to="/" className="p-2 rounded-full">
             <Home size={20} />
           </Link>
