@@ -1,0 +1,162 @@
+export const projects = [
+  {
+    title: "Dappr - Decentralized social media",
+    icon: "🕸️",
+    date: "June 2025 - June 2025",
+    description: "Built with React native, Solidity, and Ethereum blockchain.",
+    summary: "A decentralized social media platform",
+    details:
+      "Users can connect their MetaMask wallet, create a profile, and interact with on-chain social posts—completely censorship-resistant and user-owned.",
+    techStack: [
+      "React Native",
+      "Web3.js",
+      "WalletConnect v2",
+      "Metamask",
+      "Solidity",
+      "Ethereum Sepolia testnet",
+    ],
+    website: "",
+    github: "https://github.com/vivekupasani/Dappr",
+  },
+  {
+    title: "Mock 3 Wallet - Web3 wallet simulation",
+    icon: "🕸️",
+    date: "June 2025 - June 2025",
+    description: "Built with React native, Nodejs, Expressjs and MongoDB",
+    summary: "A full-stack project simulating a Web3 wallet system",
+    details:
+      "This system replicates wallet creation, token management, transactions, contact book features, and user settings",
+    techStack: ["React Native", "Nodejs", "Expressjs", "MongoDB"],
+    github: "https://github.com/vivekupasani/mock3wallet",
+  },
+  {
+    title: "Syncra AI - AI powered voice assistant",
+    icon: "🕸️",
+    date: "May 2025 - May 2025",
+    description: "Built with Flutter, Nodejs, Expressjs and Gemini",
+    summary: "Generate images and answer your queries",
+    details:
+      "Introducing an AI-powered voice assistant that not only answers your questions in real time but also generates stunning images from your voice commands.",
+    techStack: ["Flutter", "Nodejs", "Expressjs", "Gemini"],
+    website: "",
+    github: "https://github.com/vivekupasani/syncra",
+  },
+  {
+    title: "DevunoAI - The AI-powered code review tool",
+    date: "April 2025 - April 2025",
+    description:
+      "Built with React.js, Node.js, Express.js, Motion, Gemini API.",
+    summary: "The AI-powered code review tool for developers",
+    details:
+      "It offers fast, secure code reviews with AI integration for seamless code analysis, management, and performance. It helps developers improve their code quality and productivity.",
+    techStack: ["React.js", "Motion", "Node.js", "Express.js", "Gemini API"],
+    website: "https://devuno.onrender.com/",
+    github: "https://github.com/vivekupasani/devuno",
+  },
+  {
+    title: "CloudStash - The ultimate cloud storage solution",
+    icon: "☁️",
+    date: "November 2024 - December 2024",
+    description:
+      "Built with Flutter, Node.js, Express.js, Firebase and MongoDB.",
+    summary: "A Google drive-style cloud storage app",
+    details:
+      "It offers fast, secure cloud storage with firebase integration for seamless media upload, management, and performance.",
+    techStack: [
+      "Flutter",
+      "Dart",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Firebase",
+    ],
+    website: "https://cloudstash-vivekupasani.onrender.com/",
+    github: "https://github.com/vivekupasani/cloudstash",
+  },
+  {
+    title: "Pixsy - Full social media app",
+    icon: "🕸️",
+    date: "August 2024 - October 2024",
+    description: "Built with Flutter, Firebase, and BLoC.",
+    summary: "A modern social media app",
+    details:
+      "Here users can share posts, discover people, and connect in real-time. Firebase powers authentication and media storage, while clean architecture ensures smooth, scalable performance.",
+    techStack: [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "BLoC",
+      "Clean Architecture",
+      "Get_it",
+    ],
+    website: "https://pixsy-b2ccb.web.app/",
+    github: "https://github.com/vivekupasani/pixsy",
+  },
+  {
+    title: "ChatApp - Real-time chat & social experience",
+    icon: "💬",
+    date: "December 2024 - January 2025",
+    description: "Built with Kotlin, Firebase, and MVVM Architecture.",
+    summary: "A modern chat app with real-time messaging and social features",
+    details:
+      "Connect with friends, send messages or images, manage statuses, and enjoy light/dark themes—all with Firebase-powered backend and clean UI.",
+    techStack: [
+      "Kotlin",
+      "XML",
+      "MVVM",
+      "Firebase Auth",
+      "Firestore",
+      "Firebase Storage",
+      "Realtime DB",
+      "Glide",
+      "Material Design",
+    ],
+    github: "https://github.com/vivekupasani/chatapp.git",
+  },
+  {
+    title: "Food Villa - Your personal recipe book",
+    icon: "🍽️",
+    date: "September 2024 - October 2024",
+    description: "Built with Kotlin, MVVM, Retrofit, Room, and more.",
+    summary:
+      "A feature-rich recipe app with step-by-step guides and video tutorials",
+    details:
+      "Food Villa makes cooking easy with clear instructions, videos, and a clean UI. Whether you're a beginner or a pro, explore and prepare meals effortlessly.",
+    techStack: [
+      "Kotlin",
+      "Navigation Component",
+      "Retrofit",
+      "Room DB",
+      "MVVM",
+      "LiveData",
+      "Coroutines",
+      "View Binding",
+      "Glide",
+    ],
+    github: "https://github.com/vivekupasani/Food-Villa.git",
+  },
+  {
+    title: "Pixster - A wallpaper collection app",
+    icon: "🖼️",
+    date: "August 2024 - September 2024",
+    description: "Built with Flutter, BLoC, HTTP, and Hive.",
+    summary: "A sleek wallpaper app to explore, download, and manage favorites",
+    details:
+      "Pixster offers a seamless experience for browsing and downloading high-quality wallpapers, with search and favorites features for easy access and personalization.",
+    techStack: ["Flutter", "Dart", "BLoC", "HTTP", "Hive"],
+    github:
+      "https://github.com/vivekupasani/Pixster-A-Wallpaper-Collection.git",
+  },
+  {
+    title: "JSONBazaar - A free mock API's store",
+    icon: "🧩",
+    date: "March 2025 - March 2025",
+    description: "Built with Ejs, Node.js, and Express.js.",
+    summary: "Say goodbye to handcrafting mock data",
+    details:
+      "It offers high-performance mock APIs for developers, testers, and businesses. Perfect for learning API integration, testing, or prototyping—without the need for a backend.",
+    techStack: ["EJS", "Node.js", "Express.js", "JavaScript", "Render"],
+    website: "https://jsonbazaar.onrender.com",
+    github: "https://github.com/vivekupasani/jsonbazaar",
+  },
+];

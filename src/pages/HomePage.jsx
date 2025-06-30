@@ -8,11 +8,16 @@ const HomePage = () => {
     "Kotlin",
     "Dart",
     "JavaScript",
+    "Solidity",
     "Android",
     "Flutter",
+    "React Native",
     "React",
+    "Tailwind CSS",
     "Node.js",
     "Express.js",
+    "Ethereum blockchain",
+    "Smart contracts",
     "MongoDB",
     "Firebase",
     "PHP",
@@ -33,54 +38,67 @@ const HomePage = () => {
 
   const projects = [
     {
-      title: "Pixsy - Full social media app",
-      duration: "August 2024 - October 2024",
-      description: "Built with Flutter, Firebase, and BLoC.",
+      title: "Dappr - Decentralized social media",
+      icon: "🕸️",
+      date: "June 2025 - June 2025",
+      description:
+        "Built with React native, Solidity, and Ethereum blockchain.",
+      summary: "A decentralized social media platform",
       details:
-        "Users can share posts, discover others, and connect in real-time—powered by Firebase and clean architecture for smooth, scalable performance.",
-      tags: ["Flutter", "Dart", "Firebase", "BLoC", "Clean Architecture"],
-      website: "https://pixsy-b2ccb.web.app/",
-      github: "https://github.com/vivekupasani/pixsy",
+        "Users can connect their MetaMask wallet, create a profile, and interact with on-chain social posts—completely censorship-resistant and user-owned.",
+      techStack: [
+        "React Native",
+        "Web3.js",
+        "WalletConnect v2",
+        "Metamask",
+        "Solidity",
+        "Ethereum Sepolia testnet",
+      ],
+      website: "",
+      github: "https://github.com/vivekupasani/Dappr",
     },
     {
-      title: "JSONBazaar - A free mock API's store",
-      duration: "March 2025 - March 2025",
-      description: "Built with Html, Css, Ejs, Node.js, and Express.js.",
+      title: "Mock 3 Wallet - Web3 wallet simulation",
+      icon: "🕸️",
+      date: "June 2025 - June 2025",
+      description: "Built with React native, Nodejs, Expressjs and MongoDB",
+      summary: "A full-stack project simulating a Web3 wallet system",
       details:
-        "It delivers high-performance mock APIs with fast, realistic responses—ideal for testing, prototyping, and learning without a backend.",
-      tags: [
-        "HTML",
-        "CSS",
-        "EJS",
-        "Node.js",
-        "Express.js",
-        "JavaScript",
-        "Render",
-      ],
-      website: "https://jsonbazaar.onrender.com",
-      github: "https://github.com/vivekupasani/jsonbazaar",
+        "This system replicates wallet creation, token management, transactions, contact book features, and user settings",
+      techStack: ["React Native", "Nodejs", "Expressjs", "MongoDB"],
+      github: "https://github.com/vivekupasani/mock3wallet",
+    },
+    {
+      title: "Syncra AI - AI powered voice assistant",
+      icon: "🕸️",
+      date: "May 2025 - May 2025",
+      description: "Built with Flutter, Nodejs, Expressjs and Gemini",
+      summary: "Generate images and answer your queries",
+      details:
+        "Introducing an AI-powered voice assistant that not only answers your questions in real time but also generates stunning images from your voice commands.",
+      techStack: ["Flutter", "Nodejs", "Expressjs", "Gemini"],
+      website: "",
+      github: "https://github.com/vivekupasani/syncra",
     },
     {
       title: "CloudStash - The ultimate cloud storage solution",
-      duration: "November 2024 - December 2024",
+      icon: "☁️",
+      date: "November 2024 - December 2024",
       description:
         "Built with Flutter, Node.js, Express.js, Firebase and MongoDB.",
+      summary: "A Google drive-style cloud storage app",
       details:
         "It offers fast, secure cloud storage with firebase integration for seamless media upload, management, and performance.",
-      tags: ["Flutter", "Dart", "Node.js", "Express.js", "MongoDB", "Firebase"],
+      techStack: [
+        "Flutter",
+        "Dart",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Firebase",
+      ],
       website: "https://cloudstash-vivekupasani.onrender.com/",
       github: "https://github.com/vivekupasani/cloudstash",
-    },
-    {
-      title: "DevunoAI - The AI-powered code review tool",
-      duration: "April 2025 - April 2025",
-      description:
-        "Built with React.js, Node.js, Express.js, Motion, Gemini API.",
-      details:
-        "It offers fast, secure code reviews with AI integration for seamless code analysis, management, and performance.",
-      tags: ["React.js", "Motion", "Node.js", "Express.js"],
-      website: "https://devuno.onrender.com/",
-      github: "https://github.com/vivekupasani/devuno",
     },
   ];
 
@@ -95,15 +113,16 @@ const HomePage = () => {
         className="flex flex-col md:flex-row items-center justify-between py-12"
       >
         <div className="md:mr-8">
-          <h1 className="text-3xl font-bold mb-2">Hi, I'm Vivek</h1>
+          <h1 className="text-  xl font-bold mb-2">Hi, I'm Vivek</h1>
           <p className="flex items-center text-gray-600 mb-4">
             <span className="h-2 w-2 bg-pink-500 rounded-full mr-2"></span>
             Based in India
           </p>
           <p className="text-25 text-gray-700 mb-4">
-            I'm a full-stack developer with a strong foundation in mobile app
-            development and a growing expertise in MongoDB, Express.js,
-            React.js, Node.js.
+            I'm a skilled full-stack and mobile developer with expertise in
+            Flutter, React Native, Node.js, and Web3. Passionate about building
+            scalable apps using modern tech like Firebase, Solidity, and Clean
+            Architecture.
           </p>
           <p className="text-gray-700 mb-6 text-20 ">
             For quick connect just drop me a Hey! on X, I'm pretty active there.
@@ -142,7 +161,7 @@ const HomePage = () => {
           animate={{ opacity: 1, rotate: 0, delay: 10 }}
           transition={{ duration: 0.5, bounce: 0.25 }}
           whileHover={{ scale: 1.05, rotate: 1 }}
-          className="hover:shadow-fuchsia-400 w-88 h-58 rotate-2 rounded-full overflow-hidden shadow-lg shadow-gray-500 hidden md:block"
+          className="hover:shadow-fuchsia-400 w-108 h-48  rotate-2 overflow-hidden rounded-lg shadow-lg shadow-gray-500 hidden md:block"
         >
           <motion.img
             src={mylogo}
@@ -150,7 +169,7 @@ const HomePage = () => {
             animate={{ opacity: 1, rotate: 0, delay: 10 }}
             transition={{ duration: 0.5, bounce: 0.25 }}
             alt="Vivek Upasani"
-            className="w-full h-full object-cover shadow-lg shadow-gray-500 rounded-full"
+            className="w-full h-full object-cover shadow-lg shadow-gray-500 rounded-lg"
           />
         </motion.div>
       </motion.div>
@@ -248,9 +267,11 @@ const HomePage = () => {
           Projects
         </h2>
         <p className="text-gray-600 text-25 mb-8">
-          I'm currently working on an artificial intelligence voice command app and website. I'm passionate about building
-          products that enhance productivity and simplify the development
-          process. <br />
+          I'm currently exploring Web3 by building decentralized applications
+          and smart contract integrations. I'm passionate about creating
+          products that empower users and push the boundaries of blockchain
+          technology.
+          <br />
           Below are three of my projects — feel free to check out more on my{" "}
           <a
             className="text-gray-700 hover:text-black"
@@ -265,57 +286,73 @@ const HomePage = () => {
           .
         </p>
 
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, bounce: 0.25, delay: 0.1 }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               whileHover={{
                 scale: 1.01,
-                boxShadow: "0 0 10px rgb(231, 187, 255)",
+                boxShadow: "#fff",
                 transition: { duration: 0.2, bounce: 0.25 },
               }}
-              key={index}
               className="border border-gray-200 rounded-lg p-6"
             >
               <div className="flex items-center mb-2">
                 <h3 className="text-xl font-bold">{project.title}</h3>
+                {project.icon && (
+                  <span className="ml-2 mt-2">{project.icon}</span>
+                )}
               </div>
-              <p className="text-gray-500 mb-4">{project.duration}</p>
+              <p className="text-gray-500 mb-4">{project.date}</p>
               <p className="text-gray-600 mb-2">{project.description}</p>
-              <p className="font-semibold mb-1">{project.details}</p>
+              <p className="font-semibold mb-1">{project.summary}</p>
+              <p className="text-gray-600 mb-4">{project.details}</p>
+
               <div className="flex flex-wrap gap-2 mb-4">
-                {project.tags.map((tag, tagIndex) => (
+                {project.techStack.map((tech, idx) => (
                   <span
-                    key={tagIndex}
+                    key={idx}
                     className="bg-gray-200 text-gray-800 px-3 py-1 rounded-md text-sm"
                   >
-                    {tag}
+                    {tech}
                   </span>
                 ))}
               </div>
+
               <div className="flex space-x-2">
-                <a
-                  href={project.website}
-                  className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
-                >
-                  <ExternalLink className="mr-1" size={14} />
-                  Website
-                </a>
-                <a
-                  href={project.github}
-                  className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
-                >
-                  <Github className="mr-1" size={14} />
-                  Github
-                </a>
+                {project.website && (
+                  <a
+                    href={project.website}
+                    className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
+                  >
+                    <ExternalLink className="mr-1" size={14} />
+                    Website
+                  </a>
+                )}
+                {project.github && (
+                  <a
+                    href={project.github}
+                    className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
+                  >
+                    <Github className="mr-1" size={14} />
+                    Github
+                  </a>
+                )}
+                {project.preview && (
+                  <a
+                    href={project.github}
+                    className="flex items-center bg-gray-800 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-700"
+                  >
+                    <Github className="mr-1" size={14} />
+                    Preview
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </motion.div>
 
       {/* Contact */}
