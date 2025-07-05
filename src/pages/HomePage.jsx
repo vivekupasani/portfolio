@@ -189,6 +189,28 @@ const HomePage = () => {
           <div className="flex flex-wrap items-center justify-between mb-1">
             <div className="flex items-center">
               <div className="bg-gray-800 text-white w-7 h-7 rounded-full flex items-center justify-center mr-2">
+                <span className="font-bold text-xs">A</span>
+              </div>
+              <div>
+                <div className="flex items-center">
+                  <h3 className="text-sm font-medium">Acernity</h3>
+                  <a href="https://www.linkedin.com/company/acernityhq/">
+                    <ExternalLink size={12} className="ml-1 text-gray-500" />
+                  </a>
+                </div>
+                <p className="text-gray-600 text-xs">
+                  Software Developer - Freelancer
+                </p>
+              </div>
+            </div>
+            <p className="ml-9 sm:text-gray-500 text-xs">May 2024 - Present</p>
+          </div>
+        </div>
+
+        <div className="mb-3">
+          <div className="flex flex-wrap items-center justify-between mb-1">
+            <div className="flex items-center">
+              <div className="bg-gray-800 text-white w-7 h-7 rounded-full flex items-center justify-center mr-2">
                 <span className="font-bold text-xs">C</span>
               </div>
               <div>
@@ -206,25 +228,6 @@ const HomePage = () => {
               </div>
             </div>
             <p className="ml-9 sm:text-gray-500 text-xs">Dec 2024 - Apr-2025</p>
-          </div>
-        </div>
-
-        <div className="mb-3">
-          <div className="flex flex-wrap items-center justify-between mb-1">
-            <div className="flex items-center">
-              <div className="bg-gray-800 text-white w-7 h-7 rounded-full flex items-center justify-center mr-2">
-                <span className="font-bold text-xs">F</span>
-              </div>
-              <div>
-                <div className="flex items-center">
-                  <h3 className="text-sm font-medium">Freelancer</h3>
-                </div>
-                <p className="text-gray-600 text-xs">
-                  Full stack web & app developer - Freelancer
-                </p>
-              </div>
-            </div>
-            <p className="ml-9 sm:text-gray-500 text-xs">May 2024 - Jan 2025</p>
           </div>
         </div>
       </motion.div>
