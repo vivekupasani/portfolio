@@ -1,6 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 import { Skills, SkillIcons } from "@/data/skills";
+
+export const metadata: Metadata = {
+  title: "skills",
+  description:
+    "Technologies used by Vivek Upasani to build fast, scalable, and user-focused products — TypeScript, React, Next.js, Node.js, PostgreSQL, Docker, and more.",
+  alternates: {
+    canonical: "/skills",
+  },
+};
 
 const linkClass =
   "text-[#0066cc] no-underline hover:text-[#004499] hover:underline transition-colors duration-200 font-semibold";

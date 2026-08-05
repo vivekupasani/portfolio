@@ -1,5 +1,15 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import Projects from "../../components/Projects";
+
+export const metadata: Metadata = {
+  title: "projects",
+  description:
+    "Side projects built by Vivek Upasani in his spare time — from games and e-commerce to developer tools. Explore the full list with tech stacks and links.",
+  alternates: {
+    canonical: "/projects",
+  },
+};
 
 const linkClass =
   "text-[#0066cc] no-underline hover:text-[#004499] hover:underline transition-colors duration-200 font-semibold";
