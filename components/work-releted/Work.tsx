@@ -3,25 +3,7 @@ import type { DescriptionSegment } from "@/data/work";
 import Link from "next/link";
 
 const linkClass =
-  "text-[#0066cc] no-underline hover:text-[#004499] hover:underline transition-colors duration-200";
-
-function renderDescription(segments: DescriptionSegment[]) {
-  return segments.map((segment, i) =>
-    typeof segment === "string" ? (
-      <span key={i}>{segment}</span>
-    ) : (
-      <a
-        key={i}
-        href={segment.href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={linkClass}
-      >
-        {segment.text}
-      </a>
-    )
-  );
-}
+  "text-[#0066cc] no-underline hover:text-[#004499] hover:underline transition-colors duration-200 font-semibold";
 
 export default function Work() {
   return (
@@ -40,14 +22,18 @@ export default function Work() {
           {item.status && (
             <em className="text-[#666]">{item.status}</em>
           )}
-          <span className="block mt-[6px] text-[#555] lowercase">
-            {/* {renderDescription(item.description)} */}
+          <span className="block mt-1.5 text-[#555] lowercase">
             {item.shortDescription}
           </span>
         </div>
       ))}
+      <p className="text-base text-[#444] mb-6">Curious about the technologies I use? Check out{" "}
+        <Link className={linkClass} href={"/skills"}>/skills</Link>
+        {" "} for my complete tech stack.
+      </p>
       <p className="text-base text-[#444]">
-        I spend my weekends building side projects. It's how I learn, experiment, and ship new ideas. Check them out at <Link className={linkClass} href={"/projects"}>/projects</Link>.
+        I spend my weekends building side projects. It's how I learn, experiment, and ship new ideas. Check them out at{" "}
+        <Link className={linkClass} href={"/projects"}>/projects</Link>.
       </p>
     </>
   );

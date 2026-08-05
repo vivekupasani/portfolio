@@ -27,7 +27,7 @@ export default function Hero() {
             className="text-base mb-5 text-[#444] mt-4 leading-[1.7] "
             style={{ whiteSpace: "pre-line" }}
           >
-            {`product focused Engineer who ships fast`}
+            {`product focused engineer who ships fast`}
             <br className="hidden md:inline" />
             {` and focuses on user experience.\n\ni love building tech products.\n\nhere are a few things i've done:`}
           </p>
@@ -40,7 +40,7 @@ export default function Hero() {
         alt="Vivek Upasani"
         width={220}
         height={275}
-        className="w-[220px] min-w-[220px] object-cover aspect-[4/5] max-[600px]:hidden"
+        className="w-55 min-w-55 object-cover aspect-4/5 max-[600px]:hidden"
         priority
       />
     </div>

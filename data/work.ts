@@ -19,7 +19,7 @@ export interface Work {
 
 export const work: Work[] = [
     {
-        name: "freelance.work",
+        name: "freelance work",
         href: "https://linkedin.com/in/vivekupasani",
         slug: "freelance-work",
         role: "software developer",

@@ -2,12 +2,12 @@ import Link from "next/link";
 import type { Work } from "@/data/work";
 
 const linkClass =
-  "text-[#0066cc] no-underline hover:text-[#004499] hover:underline transition-colors duration-200";
+  "text-[#0066cc] no-underline hover:text-[#004499] hover:underline transition-colors duration-200 font-semibold";
 
 export default function WorkDetail({ item }: { item: Work }) {
   return (
     <div className="px-8 py-4 md:p-12 bg-[#F1F0EF] text-[#333] leading-[1.7] min-h-screen">
-      <div className="max-w-[580px] mx-auto text-left">
+      <div className="max-w-145 mx-auto text-left">
         <div className="mb-6">
           <Link href="/" className={linkClass}>
             ← back
