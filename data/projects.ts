@@ -2,7 +2,6 @@ export interface Project {
     name: string;
     href: string;
     slug: string;
-    role: string;
     status?: string;
     shortDescription: string;
     description: string[];
@@ -15,7 +14,6 @@ export const projects: Project[] = [
         name: "whispy",
         href: "https://github.com/vivekupasani/whispy",
         slug: "whispy",
-        role: "Desktop App Development",
         status: "March 2026",
         shortDescription: "desktop voice transcription app with push-to-talk recording and AI-powered speech-to-text",
         description: [
@@ -32,7 +30,6 @@ export const projects: Project[] = [
         name: "mr driving",
         href: "https://mr-driving.vercel.app/",
         slug: "mr-driving",
-        role: "Game Development",
         status: "May 2026",
         shortDescription: "open-world browser car driving game with realistic physics and free-roam gameplay",
         description: [
@@ -49,7 +46,6 @@ export const projects: Project[] = [
         name: "jsonbazaar",
         href: "https://jsonbazaar.onrender.com/",
         slug: "jsonbazaar",
-        role: "Web Development",
         status: "Mar 2025 • 1 month",
         shortDescription: "free mock REST API store for developers to test and prototype their applications",
         description: [
@@ -67,7 +63,6 @@ export const projects: Project[] = [
         name: "luxora",
         href: "https://online-jewelry-shop-ecommerce.vercel.app/",
         slug: "luxora",
-        role: "Web Development",
         status: "March 2026 - Present",
         shortDescription: "full-fledged e-commerce website for jewelry with secure checkout and order management",
         description: [
@@ -83,7 +78,6 @@ export const projects: Project[] = [
         name: "medremind",
         href: "https://github.com/vivekupasani/medremind",
         slug: "medremind",
-        role: "App Development",
         status: "March 2026 - March 2026",
         shortDescription: "cross-platform medication reminder app with custom scheduling and biometric authentication",
         description: [
@@ -102,7 +96,6 @@ export const projects: Project[] = [
         name: "chatapp",
         href: "https://github.com/vivekupasani/chatapp",
         slug: "chatapp",
-        role: "App Development",
         status: "July 2024 - August 2024",
         shortDescription: "real-time chat application built with signup, auth, friend requests, and instant messaging",
         description: [
@@ -121,7 +114,6 @@ export const projects: Project[] = [
         name: "pixsy",
         href: "https://pixsy-b2ccb.web.app",
         slug: "pixsy",
-        role: "App Development",
         status: "Aug 2024 - Oct 2024",
         shortDescription: "complete social media platform with image sharing, real-time chat, and likes",
         description: [

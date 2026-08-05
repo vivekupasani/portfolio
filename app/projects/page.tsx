@@ -1,3 +1,30 @@
-export default function Projects() {
-    return <>Hello Projects</>;
+import Link from "next/link";
+import Projects from "../../components/Projects";
+
+const linkClass =
+  "text-[#0066cc] no-underline hover:text-[#004499] transition-colors duration-200";
+
+export default function ProjectsPage() {
+  return (
+    <div className="px-8 py-4 md:p-12 bg-[#F1F0EF] text-[#333] leading-[1.7] min-h-screen">
+      <div className="max-w-[580px] mx-auto text-left">
+        <div className="mb-6">
+          <Link href="/" className={linkClass}>
+            ← back
+          </Link>
+        </div>
+
+        <h1 className="text-[28px] font-bold text-black mb-1 leading-tight">
+          projects
+        </h1>
+        <p className="text-base text-[#555] mb-4">
+          side projects i spend my weekends building
+        </p>
+
+        <div className="mb-6 border-t border-[#ddd]" />
+
+        <Projects />
+      </div>
+    </div>
+  );
 }
