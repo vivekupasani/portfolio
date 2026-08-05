@@ -48,21 +48,12 @@ export const metadata: Metadata = {
     title: "vivek upasani",
     description:
       "Product focused full stack developer who ships fast and focuses on user experience. Explore my projects, work experience, and tech stack.",
-    images: [
-      {
-        url: "/me.png",
-        width: 440,
-        height: 550,
-        alt: "Vivek Upasani",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "vivek upasani",
     description:
       "Product focused full stack developer who ships fast and focuses on user experience.",
-    images: ["/me.png"],
   },
 };
 
