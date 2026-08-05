@@ -2,7 +2,7 @@ import Link from "next/link";
 import Projects from "../../components/Projects";
 
 const linkClass =
-  "text-[#0066cc] no-underline hover:text-[#004499] transition-colors duration-200";
+  "text-[#0066cc] no-underline hover:text-[#004499] hover:underline transition-colors duration-200 font-semibold";
 
 export default function ProjectsPage() {
   return (

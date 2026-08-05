@@ -23,6 +23,19 @@ export default function WorkDetail({ item }: { item: Work }) {
           {item.status && <em className="text-[#666]"> {item.status}</em>}
         </p>
 
+        {item.href && (
+          <p className="mb-4">
+            <a
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={linkClass}
+            >
+              Visit {item.name}&apos;s website ↗
+            </a>
+          </p>
+        )}
+
         <div className="mb-6 border-t border-[#ddd]" />
 
         <p className="text-[#333] leading-[1.8] lowercase">

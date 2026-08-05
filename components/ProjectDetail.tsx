@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Project } from "@/data/projects";
 
 const linkClass =
-  "text-[#0066cc] no-underline hover:text-[#004499] hover:underline transition-colors duration-200";
+  "text-[#0066cc] no-underline hover:text-[#004499] hover:underline transition-colors duration-200 font-semibold";
 
 export default function ProjectDetail({ item }: { item: Project }) {
   return (
@@ -22,6 +22,19 @@ export default function ProjectDetail({ item }: { item: Project }) {
           {item.status && <em className="text-[#666]">{item.status}</em>}
         </p>
 
+        {item.href && (
+          <p className="mb-4">
+            <a
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={linkClass}
+            >
+              click here to visit {item.name} ↗
+            </a>
+          </p>
+        )}
+
         <div className="mb-6 border-t border-[#ddd]" />
 
         <p className="text-[#333] leading-[1.8] lowercase">
@@ -34,17 +47,6 @@ export default function ProjectDetail({ item }: { item: Project }) {
 
         <p className="text-[13px] text-[#888] lowercase">
           tech stack: {item.techStack.join(" · ")}
-        </p>
-
-        <p className="text-base">
-          <a
-            href={item.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={linkClass}
-          >
-            view project ↗
-          </a>
         </p>
       </div>
     </div>

@@ -60,26 +60,26 @@ export const Skills = {
 export const SkillIcons: Record<string, string> = {
     // Languages
     "typescript": "https://cdn.simpleicons.org/typescript",
-    "javascript": "https://cdn.simpleicons.org/javascript",
+    "javascript": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
 
     // Frontend
     "react.js": "https://cdn.simpleicons.org/react",
     "next.js": "https://cdn.simpleicons.org/nextdotjs",
     "tailwind css": "https://cdn.simpleicons.org/tailwindcss",
-    "tanstack query": "https://cdn.simpleicons.org/reactquery",
+    "tanstack query": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
 
     // Mobile
     "react native": "https://cdn.simpleicons.org/react",
 
     // Backend
     "node.js": "https://cdn.simpleicons.org/nodedotjs",
-    "express.js": "https://cdn.simpleicons.org/express",
+    "express.js": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
 
     // Databases
     "postgresql": "https://cdn.simpleicons.org/postgresql",
     "mysql": "https://cdn.simpleicons.org/mysql",
     "mongo db": "https://cdn.simpleicons.org/mongodb",
-    "redis": "https://cdn.simpleicons.org/redis",
+    "redis": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original-wordmark.svg",
 
     // ORM
     "drizzle": "https://imgs.search.brave.com/sjOHwdFr-wDPzLy2ZXOkw6EZxLCYXeQy6wuRfaCbbHY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzY1LzMvZHJpenps/ZS1vcm0tbG9nby1w/bmdfc2Vla2xvZ28t/NjUzMzA0LnBuZw",

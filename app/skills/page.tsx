@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Skills, SkillIcons } from "@/data/skills";
 
 const linkClass =
-  "text-[#0066cc] no-underline hover:text-[#004499] transition-colors duration-200";
+  "text-[#0066cc] no-underline hover:text-[#004499] hover:underline transition-colors duration-200 font-semibold";
 
 function categoryLabel(key: string): string {
   return key.replace(/([a-z])([A-Z])/g, "$1 $2").toLowerCase();
