@@ -14,6 +14,7 @@ export interface Work {
     status?: string;
     shortDescription: string;
     description: DescriptionSegment[];
+    images?: string[]
 }
 
 export const work: Work[] = [

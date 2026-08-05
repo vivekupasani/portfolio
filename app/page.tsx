@@ -1,7 +1,7 @@
-import Hero from "./components/Hero";
-import Work from "./components/Work";
-import Footer from "./components/Footer";
-import Divider from "./components/Divider";
+import Hero from "../components/Hero";
+import Work from "../components/work-releted/Work";
+import Footer from "../components/Footer";
+import Divider from "../components/Divider";
 
 export default function Home() {
   return (

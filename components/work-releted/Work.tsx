@@ -1,5 +1,6 @@
 import { work } from "@/data/work";
 import type { DescriptionSegment } from "@/data/work";
+import Link from "next/link";
 
 const linkClass =
   "text-[#0066cc] no-underline hover:text-[#004499] hover:underline transition-colors duration-200";
@@ -28,14 +29,12 @@ export default function Work() {
       {work.map((item) => (
         <div key={item.name} className="mb-9 leading-[1.8]">
           <strong className="text-[17px]">
-            <a
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href={`/work/${item.slug}`}
               className="text-[#0066cc] no-underline hover:text-[#004499] transition-colors duration-200"
             >
               {item.name}
-            </a>
+            </Link>
           </strong>
           {` · ${item.role} `}
           {item.status && (
@@ -47,6 +46,9 @@ export default function Work() {
           </span>
         </div>
       ))}
+      <p className="text-base text-[#444]">
+        I spend my weekends building side projects. It's how I learn, experiment, and ship new ideas. Check them out at <Link className={linkClass} href={"/projects"}>/projects</Link>.
+      </p>
     </>
   );
 }

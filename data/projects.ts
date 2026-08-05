@@ -1,0 +1,136 @@
+export interface Project {
+    name: string;
+    href: string;
+    slug: string;
+    role: string;
+    status?: string;
+    shortDescription: string;
+    description: string[];
+    techStack: string[];
+    images?: string[]
+}
+
+export const projects: Project[] = [
+    {
+        name: "whispy",
+        href: "https://github.com/vivekupasani/whispy",
+        slug: "whispy",
+        role: "Desktop App Development",
+        status: "March 2026",
+        shortDescription: "desktop voice transcription app with push-to-talk recording and AI-powered speech-to-text",
+        description: [
+            "built a desktop voice transcription app that records with a simple push-to-talk flow — hold a key, speak, and release to transcribe instantly. ",
+            "powered fast speech-to-text with Groq's Whisper Large V3. ",
+            "added an optional AI refinement step that cleans up grammar and removes filler words. ",
+            "included customizable hotkeys, from Option, Command, and Control to the F1-F12 keys. ",
+            "made it auto-paste the text into any active app while running quietly in the system tray.",
+        ],
+        techStack: ["typescript", "React.js", "Electron.js", "Tailwind CSS"],
+        images: ["/whispy.png"],
+    },
+    {
+        name: "mr driving",
+        href: "https://mr-driving.vercel.app/",
+        slug: "mr-driving",
+        role: "Game Development",
+        status: "May 2026",
+        shortDescription: "open-world browser car driving game with realistic physics and free-roam gameplay",
+        description: [
+            "built an open-world style car driving game with realistic physics and responsive controls. ",
+            "created a free-roam driving experience across highways, city roads, and off-road environments. ",
+            "added features like drifting, nitro boost, collision mechanics, and dynamic camera modes. ",
+            "built it with React Three Fiber and Rapier physics for smooth high-performance gameplay right in the browser. ",
+            "added immersive visuals with lighting effects, moving traffic props, and detailed environments.",
+        ],
+        techStack: ["Next.js", "TypeScript", "React Three Fiber", "Three.js", "Rapier Physics", "Zustand", "Tailwind CSS"],
+        images: ["/mr-driving.png"],
+    },
+    {
+        name: "jsonbazaar",
+        href: "https://jsonbazaar.onrender.com/",
+        slug: "jsonbazaar",
+        role: "Web Development",
+        status: "Mar 2025 • 1 month",
+        shortDescription: "free mock REST API store for developers to test and prototype their applications",
+        description: [
+            "built a mock REST API platform similar to JSONPlaceholder so developers can test and prototype their applications. ",
+            "implemented endpoints for common resources like posts, users, comments, and todos. ",
+            "enabled full CRUD operations for testing API requests and responses. ",
+            "designed the platform to serve realistic JSON data for frontend development. ",
+            "created a simple and developer-friendly interface for quick API testing. ",
+            "ensured fast and scalable API responses suitable for development environments.",
+        ],
+        techStack: ["Node.js", "Express", "EJS"],
+        images: ["/opengraph-image1.png"],
+    },
+    {
+        name: "luxora",
+        href: "https://online-jewelry-shop-ecommerce.vercel.app/",
+        slug: "luxora",
+        role: "Web Development",
+        status: "March 2026 - Present",
+        shortDescription: "full-fledged e-commerce website for jewelry with secure checkout and order management",
+        description: [
+            "built a full-fledged e-commerce jewelry store where users can browse a wide collection of pieces with high-quality images, detailed descriptions, and pricing. ",
+            "added a shopping cart so users can add products, update quantities, and manage selected items before purchase. ",
+            "implemented a smooth and secure checkout process with full payment integration. ",
+            "included order management so users can track their orders, view order history, and manage their purchases easily.",
+        ],
+        techStack: ["typescript", "Next.js", "Tailwind CSS", "Motion", "Supabase", "Dodopayments"],
+        images: ["/opengraph-image1.png"],
+    },
+    {
+        name: "medremind",
+        href: "https://github.com/vivekupasani/medremind",
+        slug: "medremind",
+        role: "App Development",
+        status: "March 2026 - March 2026",
+        shortDescription: "cross-platform medication reminder app with custom scheduling and biometric authentication",
+        description: [
+            "built a cross-platform medication reminder app that works seamlessly on both iOS and Android. ",
+            "set up medication scheduling with fully custom reminders for timely doses. ",
+            "added refill tracking so users can monitor their medicine supply and get alerts when it's low. ",
+            "secured access with biometric authentication using Face ID or Touch ID. ",
+            "included progress tracking to log daily medication intake with a full history. ",
+            "added calendar integration to manage doses efficiently. ",
+            "stored all data safely on-device using AsyncStorage.",
+        ],
+        techStack: ["React Native", "TypeScript", "AsyncStorage"],
+        images: ["/opengraph-image1.png"],
+    },
+    {
+        name: "chatapp",
+        href: "https://github.com/vivekupasani/chatapp",
+        slug: "chatapp",
+        role: "App Development",
+        status: "July 2024 - August 2024",
+        shortDescription: "real-time chat application built with signup, auth, friend requests, and instant messaging",
+        description: [
+            "built a real-time chat application with complete sign-up and login functionality. ",
+            "added profile setup so users can create and update their name, profile picture, and about info. ",
+            "implemented friend requests to send, receive, and accept connections. ",
+            "built instant text messaging between users. ",
+            "added image sharing, including sending and receiving photos in chat. ",
+            "included status updates users can upload and view. ",
+            "supported both light and dark themes for a consistent user experience.",
+        ],
+        techStack: ["Android", "Firebase", "Kotlin"],
+        images: ["/opengraph-image1.png"],
+    },
+    {
+        name: "pixsy",
+        href: "https://pixsy-b2ccb.web.app",
+        slug: "pixsy",
+        role: "App Development",
+        status: "Aug 2024 - Oct 2024",
+        shortDescription: "complete social media platform with image sharing, real-time chat, and likes",
+        description: [
+            "built a complete social media platform with fully real-time features. ",
+            "implemented image sharing, likes, and comments. ",
+            "developed a real-time chat system using Firebase Firestore. ",
+            "focused on creating a smooth and engaging user experience.",
+        ],
+        techStack: ["Flutter", "Firebase", "Dart"],
+        images: ["/opengraph-image1.png"],
+    }
+];
