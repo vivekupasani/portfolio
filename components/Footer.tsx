@@ -10,7 +10,7 @@ export default function Footer() {
     <p className="text-base mb-5 text-[#444]">
       if you wanna reach out, dm me on{" "}
       <a
-        href="https://x.com/vivekupasani"
+        href="https://x.com/v1vekupasani"
         target="_blank"
         rel="noopener noreferrer"
         className={linkClass}
@@ -34,7 +34,7 @@ export default function Footer() {
       </a>
       {" | "}
       <a
-        href="https://instagram.com/vivekupasani"
+        href="https://instagram.com/vivekupasni"
         target="_blank"
         rel="noopener noreferrer"
         className={linkClass}

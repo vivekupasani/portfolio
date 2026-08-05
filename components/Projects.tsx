@@ -1,4 +1,5 @@
 import { projects } from "@/data/projects";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -6,14 +7,12 @@ export default function Projects() {
       {projects.map((item) => (
         <div key={item.name} className="mb-9 leading-[1.8]">
           <strong className="text-[17px]">
-            <a
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href={`/projects/${item.slug}`}
               className="text-[#0066cc] no-underline hover:text-[#004499] transition-colors duration-200"
             >
               {item.name}
-            </a>
+            </Link>
           </strong>
           {item.status && (
             <em className="text-[#666]">{` · ${item.status}`}</em>
