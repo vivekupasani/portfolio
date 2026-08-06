@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { projects } from "@/data/projects";
 import { work } from "@/data/work";
 
-const siteUrl = "https://vivekupasani.site";
+const siteUrl = "https://vivekupasni.in";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [

@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://vivekupasani.site/sitemap.xml",
+    sitemap: "https://vivekupasni.in/sitemap.xml",
   };
 }
