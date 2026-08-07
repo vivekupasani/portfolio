@@ -17,7 +17,7 @@ const linkClass =
 export default function ProjectsPage() {
   return (
     <div className="px-8 py-4 md:p-12 bg-[#F1F0EF] text-[#333] leading-[1.7] min-h-screen">
-      <div className="max-w-[580px] mx-auto text-left">
+      <div className="max-w-145 mx-auto text-left">
         <div className="mb-6">
           <Link href="/" className={linkClass}>
             ← back

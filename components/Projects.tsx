@@ -17,10 +17,10 @@ export default function Projects() {
           {item.status && (
             <em className="text-[#666]">{` · ${item.status}`}</em>
           )}
-          <span className="block mt-[6px] text-[#555] lowercase">
+          <span className="block mt-1.5 text-[#555] lowercase">
             {item.shortDescription}
           </span>
-          <span className="block mt-[6px] text-[13px] text-[#888]">
+          <span className="block mt-1.5 text-[13px] text-[#888]">
             {item.techStack.join(" · ")}
           </span>
         </div>
