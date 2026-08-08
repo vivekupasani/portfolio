@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s | vivek upasani",
   },
   description:
-    "Portfolio of Vivek Upasani, a product focused full stack developer who ships fast and focuses on user experience. Explore my projects, work experience, and tech stack.",
+    "Portfolio of Vivek Upasani, a product focused full stack developer who ships fast and focuses on user experience.",
   keywords: [
     "Vivek Upasani",
     "full stack developer",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "vivek upasani",
     title: "vivek upasani",
     description:
-      "Product focused full stack developer who ships fast and focuses on user experience. Explore my projects, work experience, and tech stack.",
+      "Product focused full stack developer who ships fast and focuses on user experience.",
   },
   twitter: {
     card: "summary_large_image",
