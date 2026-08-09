@@ -27,9 +27,9 @@ export const projects: Project[] = [
         images: ["/whispy.png"],
     },
     {
-        name: "deploymate ",
+        name: "deploymate",
         href: "https://github.com/vivekupasani/vercel-clone",
-        slug: "deploymate ",
+        slug: "deploymate",
         status: "Aug 2026",
         description: [
             "built a self-hosted, vercel-style deployment platform that lets users deploy static web applications directly from github by simply providing a repository url. the platform automatically clones the repository, uploads the source files to supabase storage, creates a bullmq job backed by redis, and processes the build asynchronously through a dedicated deployment worker that installs dependencies, runs `npm run build`, and uploads the generated `dist/` files back to object storage. the frontend, built with react, tanstack start, tanstack router, typescript, vite, and tailwind css, provides a deployment dashboard with live progress tracking across uploading, uploaded, building, deploying, and deployed states, while the upload service handles repository cloning, storage uploads, job creation, and deployment status polling. the request-handler service serves the final static files dynamically based on each deployment's unique id and hostname, allowing deployments to be accessed through urls such as `<id>.vercelclone.com:3001/index.html`, while custom domains can be connected through cname records. deploymate is framework-agnostic for projects that produce a `dist/` directory through their build command and uses node.js, express, simple-git, bullmq, ioredis, supabase storage, redis, and docker across its services. the complete stack is containerized with docker compose and includes the frontend, upload service, deployment worker, request-handler service, and redis, allowing the entire platform to be started with a single command while also supporting running each service independently for local development. for local deployments, the platform can use a hosts-file entry to map deployment subdomains to localhost, demonstrating the core workflow behind modern deployment platforms while keeping the entire infrastructure self-hosted and under the developer's control."
