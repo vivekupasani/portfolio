@@ -19,16 +19,15 @@ export interface Work {
 
 export const work: Work[] = [
     {
-        name: "freelance work",
+        name: "independent",
         href: "https://linkedin.com/in/vivekupasani",
-        slug: "freelance-work",
+        slug: "independent",
         role: "software developer",
         status: "(latest)",
         shortDescription: "delivered custom web projects and landing pages for clients across the globe as a freelancer",
         description: [
-            "worked with clients as a freelance full stack developer, building complete web projects and marketing landing pages from scratch. ",
-            "took projects from requirements and design through development and deployment, delivering clean, responsive, and performant results. ",
-            "collaborated closely with clients to translate their goals into user-friendly products.",
+            "Designed and developed production full stack web applications, covering frontend architecture, backend services, database design, authentication, and deployment. Built responsive, production-ready interfaces from product requirements and designs using React, Next.js, TypeScript, and Tailwind CSS. Designed REST APIs and backend services using Node.js and Express, integrating databases, third-party services, authentication, and payment infrastructure.",
+            "Containerized applications with Docker and deployed production workloads across cloud platforms including Vercel, Render, and Railway. Built and launched high-converting marketing landing pages focused on performance, responsive design, clear product messaging, and lead generation.",
         ],
     },
     {
@@ -39,17 +38,8 @@ export const work: Work[] = [
         status: "(archived)",
         shortDescription: "AI powered research and productivity platform with a unified AI interface for multi-source search and document analysis.",
         description: [
-            "developed an AI-powered research and productivity platform with a unified AI interface. ",
-            "integrated web search, academic search, Reddit research, weather queries, GitHub search, and X (Twitter) search in one place. ",
-            "enabled multi-source information retrieval to simplify research and data discovery. ",
-            "implemented multi-format content processing for documents and media. ",
-            "allowed users to upload and analyze PDFs, DOC, and PPT files directly within the platform. ",
-            "built features to summarize website content and extract key insights automatically. ",
-            "added support to analyze and summarize YouTube videos using AI. ",
-            "developed functionality to chat with uploaded documents for interactive document understanding. ",
-            "integrated third-party applications for seamless productivity workflows. ",
-            "enabled users to connect Gmail, Google Drive, Google Docs, and Google Sheets with the platform. ",
-            "implemented natural language queries to interact with external apps and data easily.",
+            "Developed an AI-powered research and productivity platform featuring a unified interface for multi-source search and document analysis. Integrated web, academic, Reddit, GitHub, and X (Twitter) search to enable centralized information retrieval. Implemented multi-format content processing, allowing users to upload and analyze PDFs, DOCs, and PPTs directly within the platform.",
+            "Built features to summarize website content, extract key insights, and analyze YouTube videos automatically. Developed functionality to chat with uploaded documents for interactive document understanding. Integrated third-party applications including Gmail, Google Drive, and Google Docs for seamless productivity workflows powered by natural language queries."
         ],
     },
     {
@@ -59,8 +49,8 @@ export const work: Work[] = [
         role: "full stack developer",
         shortDescription: "AI platform for pre-publish content analysis and automated media kit generation, helping creators improve engagement.",
         description: [
-            "built an AI-powered platform that analyzes content before publishing, providing instant feedback, quality scoring, and actionable optimization suggestions to help creators and marketers improve engagement. ",
-            "created an AI-driven media kit generator that helps creators showcase audience insights and performance metrics through automatically updated, brand-ready PDFs and shareable portfolio links.",
+            "Developed an AI-powered content analysis platform for evaluating pre-publish content and generating automated optimization feedback. Built AI workflows for content analysis, recommendation generation, and automated processing of user-submitted content. Designed and developed an AI-driven media kit generation system that transformed audience insights and performance metrics into brand-ready PDFs and shareable portfolio pages.",
+            "Built and launched a high converting marketing landing page focused on performance, responsive design, clear product messaging and lead generation. Worked across the full application stack from frontend interfaces and API integration to backend workflows and production deployment."
         ],
     },
     {
@@ -70,10 +60,7 @@ export const work: Work[] = [
         role: "full stack developer intern",
         shortDescription: "Teacher's Performance Evaluation Scheme with admin panel, built with Angular, Node.js, and MySQL. A user-friendly interface lets institutions submit teacher data and simplify administrative workflows.",
         description: [
-            "worked on the Teacher's Performance Evaluation Scheme project. ",
-            "built a user-friendly interface for institutions to submit teacher's data and simplify administrative workflows. ",
-            "designed an admin panel for reviewing submissions, assigning teacher IDs, and maintaining organized digital records. ",
-            "software built using Angular, Node.js, and MySQL.",
+            "Designed and developed a comprehensive Teacher's Performance Evaluation Scheme to streamline institutional administrative workflows. Built a user-friendly interface for institutions to submit teacher data and track performance metrics. Designed an admin panel for reviewing submissions, assigning teacher IDs, and maintaining organized digital records. Worked across the full application stack from frontend interfaces and API integration to backend workflows using Angular, Node.js, and MySQL.",
         ],
     }
 ];

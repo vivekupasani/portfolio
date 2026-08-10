@@ -37,11 +37,11 @@ export default function ProjectDetail({ item }: { item: Project }) {
 
         <div className="mb-6 border-t border-[#ddd]" />
 
-        <p className="text-[#333] leading-[1.8] lowercase">
-          {item.description.map((segment, i) => (
-            <span key={i}>{segment}</span>
-          ))}
-        </p>
+        {item.description.map((segment, i) => (
+          <p key={i} className="text-[#333] leading-[1.8] lowercase mb-2 last:mb-0">
+            {segment}
+          </p>
+        ))}
 
         <div className="mb-6 mt-6 border-t border-[#ddd]" />
 

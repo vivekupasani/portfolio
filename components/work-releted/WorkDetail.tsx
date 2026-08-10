@@ -38,13 +38,12 @@ export default function WorkDetail({ item }: { item: Work }) {
 
         <div className="mb-6 border-t border-[#ddd]" />
 
-        <p className="text-[#333] leading-[1.8] lowercase">
-          {item.description.map((segment, i) =>
-            typeof segment === "string" ? (
-              <span key={i}>{segment}</span>
+        {item.description.map((segment, i) => (
+          <p key={i} className="text-[#333] leading-[1.8] lowercase mb-2 last:mb-0">
+            {typeof segment === "string" ? (
+              segment
             ) : (
               <a
-                key={i}
                 href={segment.href}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -52,9 +51,9 @@ export default function WorkDetail({ item }: { item: Work }) {
               >
                 {segment.text}
               </a>
-            )
-          )}
-        </p>
+            )}
+          </p>
+        ))}
       </div>
     </div>
   );
