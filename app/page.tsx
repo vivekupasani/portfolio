@@ -15,9 +15,12 @@ export const metadata: Metadata = {
   },
 };
 
+import VisitorTracker from "../components/VisitorTracker";
+
 export default function Home() {
   return (
     <div className="px-8 py-4 md:p-12 bg-[#F1F0EF] text-[#333] leading-[1.7] min-h-screen">
+      <VisitorTracker />
       <div className="max-w-145 mx-auto text-left">
 
         <Hero />
