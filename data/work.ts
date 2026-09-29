@@ -19,14 +19,14 @@ export interface Work {
 
 export const work: Work[] = [
     {
-        name: "independent",
-        href: "https://linkedin.com/in/vivekupasani",
+        name: "acernity studio",
+        href: "https://www.acernity.online",
         slug: "independent",
         role: "software developer",
         status: "(latest)",
-        shortDescription: "delivered custom web projects and landing pages for clients across the globe as a freelancer",
+        shortDescription: "delivered custom web projects and landing pages for clients across the globe.",
         description: [
-            "Designed and developed production full stack web applications, covering frontend architecture, backend services, database design, authentication, and deployment. Built responsive, production-ready interfaces from product requirements and designs using React, Next.js, TypeScript, and Tailwind CSS. Designed REST APIs and backend services using Node.js and Express, integrating databases, third-party services, authentication, and payment infrastructure.",
+            "Designed and developed production full stack web applications, covering frontend architecture, backend services, database design, authentication, and deployment. Built responsive, production ready interfaces from product requirements and designs using React, Next.js, TypeScript, and Tailwind CSS. Designed REST APIs and backend services using Node.js and Express, integrating databases, third-party services, authentication, and payment infrastructure.",
             "Containerized applications with Docker and deployed production workloads across cloud platforms including Vercel, Render, and Railway. Built and launched high-converting marketing landing pages focused on performance, responsive design, clear product messaging, and lead generation.",
         ],
     },
