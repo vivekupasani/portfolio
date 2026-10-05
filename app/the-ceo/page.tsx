@@ -8,9 +8,10 @@ export const metadata: Metadata = {
 	},
 };
 
-type WebsiteStatus = "Live" | "In development";
+type WebsiteStatus = "Live" | "In development" | "website to showcase my work";
 
 const websites: { url: string; status: WebsiteStatus }[] = [
+	{ url: "https://bizdine-omega.vercel.app", status: "website to showcase my work" },
 	{ url: "https://online-jewelry-shop-ecommerce.vercel.app", status: "In development" },
 	{ url: "https://www.drftmarketing.com", status: "Live" },
 	{ url: "https://www.cluezy.site", status: "Live" },
