@@ -1,0 +1,71 @@
+import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "portfolio websites",
+	description: "Five websites from the portfolio of Vivek Upasani.",
+	alternates: {
+		canonical: "/the-ceo",
+	},
+};
+
+type WebsiteStatus = "Live" | "In development";
+
+const websites: { url: string; status: WebsiteStatus }[] = [
+	{ url: "https://online-jewelry-shop-ecommerce.vercel.app", status: "In development" },
+	{ url: "https://www.drftmarketing.com", status: "Live" },
+	{ url: "https://www.cluezy.site", status: "Live" },
+	{ url: "https://www.homehavenmarket.co.uk", status: "Live" },
+	{ url: "https://www.acernity.online/work", status: "Live" },
+];
+
+const linkClass =
+	"text-[#0066cc] no-underline hover:text-[#004499] hover:underline transition-colors duration-200";
+
+export default function TheCEOPage() {
+	return (
+		<main className="px-8 py-4 md:p-12 bg-[#F1F0EF] text-[#333] leading-[1.7] min-h-screen">
+			<div className="max-w-145 mx-auto text-left">
+				<h1 className="text-[28px] font-bold text-black mb-1 leading-tight">
+					portfolio websites for the ceo
+				</h1>
+				<p className="text-base text-[#555] mb-4">
+					five websites from my portfolio
+				</p>
+
+				<div className="mb-6 border-t border-[#ddd]" />
+
+				<ol className="divide-y divide-[#ddd]">
+					{websites.map((website, index) => (
+						<li
+							key={website.url}
+							className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 py-4"
+						>
+							<span className="text-sm text-[#777]">0{index + 1}</span>
+							<a
+								href={website.url}
+								target="_blank"
+								rel="noopener noreferrer"
+								className={`${linkClass} min-w-0 flex-1 break-all`}
+							>
+								{website.url.replace(/^https:\/\//, "")}
+							</a>
+							<span
+								className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-medium ${
+									website.status === "Live"
+										? "bg-[#e4f2e8] text-[#25633a]"
+										: "bg-[#fff0d7] text-[#845400]"
+								}`}
+							>
+								{website.status}
+							</span>
+							<span aria-hidden="true" className="text-[#777]">
+								↗
+							</span>
+						</li>
+					))}
+				</ol>
+			</div>
+		</main>
+	);
+}
