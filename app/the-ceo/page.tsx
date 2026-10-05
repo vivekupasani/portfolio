@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -24,9 +23,9 @@ const linkClass =
 
 export default function TheCEOPage() {
 	return (
-		<main className="px-8 py-4 md:p-12 bg-[#F1F0EF] text-[#333] leading-[1.7] min-h-screen">
+		<main className="min-h-screen bg-[#F1F0EF] px-6 py-6 text-[#333] leading-[1.7] sm:px-8 sm:py-8 md:p-12">
 			<div className="max-w-145 mx-auto text-left">
-				<h1 className="text-[28px] font-bold text-black mb-1 leading-tight">
+				<h1 className="mb-1 text-2xl font-bold leading-tight text-black sm:text-[28px]">
 					portfolio websites for the ceo
 				</h1>
 				<p className="text-base text-[#555] mb-4">
@@ -39,29 +38,31 @@ export default function TheCEOPage() {
 					{websites.map((website, index) => (
 						<li
 							key={website.url}
-							className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 py-4"
+							className="grid grid-cols-[2rem_minmax(0,1fr)] items-center gap-x-3 gap-y-2 py-4 sm:grid-cols-[2rem_minmax(0,1fr)_auto] sm:gap-x-4"
 						>
 							<span className="text-sm text-[#777]">0{index + 1}</span>
 							<a
 								href={website.url}
 								target="_blank"
 								rel="noopener noreferrer"
-								className={`${linkClass} min-w-0 flex-1 break-all`}
+								className={`${linkClass} min-w-0 break-words [overflow-wrap:anywhere]`}
 							>
 								{website.url.replace(/^https:\/\//, "")}
 							</a>
-							<span
-								className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-medium ${
-									website.status === "Live"
-										? "bg-[#e4f2e8] text-[#25633a]"
-										: "bg-[#fff0d7] text-[#845400]"
-								}`}
-							>
-								{website.status}
-							</span>
-							<span aria-hidden="true" className="text-[#777]">
-								↗
-							</span>
+							<div className="col-start-2 flex items-center justify-between gap-3 sm:col-start-3 sm:justify-start">
+								<span
+									className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-medium ${
+										website.status === "Live"
+											? "bg-[#e4f2e8] text-[#25633a]"
+											: "bg-[#fff0d7] text-[#845400]"
+									}`}
+								>
+									{website.status}
+								</span>
+								<span aria-hidden="true" className="text-[#777] sm:ml-1">
+									↗
+								</span>
+							</div>
 						</li>
 					))}
 				</ol>
